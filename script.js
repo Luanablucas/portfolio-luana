@@ -21,7 +21,6 @@ const PROJECTS = {
     repo: "https://github.com/Luanablucas/orderflow-api",
   },
 
-
   "lista-compras": {
     category: "DESENVOLVIMENTO WEB · PROJETO ACADÊMICO",
     title: "Cadastro e Lista de Compras",
@@ -79,7 +78,7 @@ const PROJECTS = {
       "Prototipação",
       "Fluxos de usuário",
     ],
-    repo: "https://www.figma.com/proto/IBJwcSDDouvJZLLOdgk0vQ/Prototipo-PetHELP-alta-fidelidade?node-id=1-4&starting-point-node-id=1%3A4&t=DwhY50cN0QpKEHJA-1"
+    repo: "https://www.figma.com/proto/IBJwcSDDouvJZLLOdgk0vQ/Prototipo-PetHELP-alta-fidelidade?node-id=1-4&starting-point-node-id=1%3A4&t=DwhY50cN0QpKEHJA-1",
   },
   fertirrigacao: {
     category: "DESENVOLVIMENTO MOBILE · PROJETO ACADÊMICO",
@@ -120,12 +119,18 @@ const SKILLS = {
       "Da ideia à interface, e da interface à lógica que faz tudo funcionar.",
     icon: "⌘",
     items: [
-      "HTML & CSS",
-      "JavaScript",
+      "Python",
+      "FastAPI",
       "Node.js",
       "Express",
+      "APIs REST",
       "PostgreSQL",
-      "Python",
+      "SQLite",
+      "SQLAlchemy",
+      "Pydantic",
+      "Pytest",
+      "JavaScript",
+      "HTML & CSS",
       "Flutter",
       "Git / GitHub",
     ],
@@ -162,344 +167,434 @@ const SKILLS = {
   },
 };
 
-// PT/EN — Traduções revisadas para este portfólio.
-// Os textos originais em português continuam no HTML, em PROJECTS e em SKILLS.
-// Para editar traduções simples, altere os textos correspondentes abaixo.
+// PT/EN 
+
 const EN = {
   text: {
-  "Gestão de clientes, produtos e pedidos.": "Customer, product, and order management.",
-  "15 TESTES AUTOMATIZADOS": "15 AUTOMATED TESTS",
-  "DESENVOLVIMENTO BACK-END": "BACK-END DEVELOPMENT",
-  "PROJETO DE ESTUDO": "LEARNING PROJECT",
-  "OrderFlow API — Gestão de Pedidos": "OrderFlow API — Order Management",
-  "API REST em Python para gerenciar clientes, produtos e pedidos, com validações, controle de estoque e testes automatizados.": "Python REST API for managing customers, products, and orders with validation, inventory control, and automated tests.",
+    "Gestão de clientes, produtos e pedidos.":
+      "Customer, product, and order management.",
+    "15 TESTES AUTOMATIZADOS": "15 AUTOMATED TESTS",
+    "DESENVOLVIMENTO BACK-END": "BACK-END DEVELOPMENT",
+    "PROJETO DE ESTUDO": "LEARNING PROJECT",
+    "OrderFlow API — Gestão de Pedidos": "OrderFlow API — Order Management",
+    "API REST em Python para gerenciar clientes, produtos e pedidos, com validações, controle de estoque e testes automatizados.":
+      "Python REST API for managing customers, products, and orders with validation, inventory control, and automated tests.",
 
-  "Pular para o conteúdo": "Skip to content",
-  "Início": "Home",
-  "Sobre": "About",
-  "Projetos": "Projects",
-  "Skills": "Skills",
-  "Jornada": "Journey",
-  "Vamos conversar": "Let’s talk",
-  "PORTFÓLIO CRIATIVO / 2026": "INTERACTIVE PORTFOLIO / 2026",
-  "Oi, eu sou": "Hi, I’m",
-  "Conheça meus projetos": "Explore my projects",
-  "Um pouco sobre mim": "A little about me",
-  "Curiosidade": "Curiosity",
-  "é meu combustível.": "fuels me.",
-  "CRIATIVA POR NATUREZA": "CREATIVE BY NATURE",
-  "DESENVOLVENDO SOLUÇÕES": "BUILDING SOLUTIONS",
-  "CÓDIGO COM CRIATIVIDADE": "CODING WITH CREATIVITY",
-  "EXPERIÊNCIAS DIGITAIS": "DIGITAL EXPERIENCES",
-  "SEMPRE APRENDENDO": "ALWAYS LEARNING",
-  "01 / QUEM SOU": "01 / WHO I AM",
-  "Muito prazer, :)": "Nice to meet you, :)",
-  "SOBRE MIM": "ABOUT ME",
-  "✳ Pensamento lógico": "✳ Logical thinking",
-  "↗ Aprendizado contínuo": "↗ Lifelong learning",
-  "♡ Resolução de problemas": "♡ Problem-solving",
-  "Conheça minha trajetória": "Explore my journey",
-  "02 / O QUE EU CRIO": "02 / WHAT I BUILD",
-  "MEUS PROJETOS ✳": "MY PROJECTS ✳",
-  "Uma seleção de trabalhos acadêmicos, cases de produto e experiências práticas. Cada um conta um pouco do meu jeito de pensar e criar.": "A selection of academic work, product case studies, and hands-on projects. Each one reflects how I approach challenges and build solutions.",
-  "Todos": "All",
-  "Desenvolvimento": "Development",
-  "Dados": "Data",
-  "mercado / loja online": "market / online store",
-  "Início Ofertas Categorias": "Home Offers Categories",
-  "OFERTAS DA SEMANA": "WEEKLY DEALS",
-  "Compre sem sair de casa ↗": "Shop from home ↗",
-  "Hortifruti": "Fresh produce",
-  "Mercearia": "Groceries",
-  "Bebidas": "Drinks",
-  "DESENVOLVIMENTO WEB": "WEB DEVELOPMENT",
-  "EM DESENVOLVIMENTO": "IN DEVELOPMENT",
-  "E-commerce de supermercado": "Supermarket e-commerce",
-  "Loja online completa, com autenticação, catálogo, gestão de produtos e painel administrativo.": "Full-featured online store with authentication, product catalog, inventory management, and an admin dashboard.",
-  "minha lista de compras": "my shopping list",
-  "ORGANIZE SUAS COMPRAS": "KEEP SHOPPING ORGANIZED",
-  "Minha lista": "My list",
-  "produtos": "products",
-  "coletados": "collected",
-  "quase lá! ↗": "almost done! ↗",
-  "PRODUTOS": "PRODUCTS",
-  "QUANTIDADE": "QUANTITY",
-  "Arroz": "Rice",
-  "Unidade": "Unit",
-  "Leite": "Milk",
-  "Litro": "Liter",
-  "Maçã": "Apple",
-  "Quilograma": "Kilogram",
-  "Enviar lista para API": "Send list to API",
-  "PROJETO ACADÊMICO": "ACADEMIC PROJECT",
-  "Cadastro e Lista de Compras": "Shopping List & Product Manager",
-  "Sistema para cadastrar produtos, acompanhar uma lista de compras e enviar os dados para uma API.": "Web app to manage products, track a shopping list, and send data to an API.",
-  "Olá, Amora! ♡": "Hi, Amora! ♡",
-  "Próximas vacinas": "Upcoming vaccines",
-  "⌕   Encontre um profissional": "⌕   Find a professional",
-  "Encontre um profissional": "Find a professional",
-  "Veterinário": "Veterinarian",
-  "Vacinas": "Vaccines",
-  "CASE UX/UI": "UX/UI CASE STUDY",
-  "PetHELP — cuidado animal": "PetHELP — Pet Care",
-  "Experiência mobile que conecta tutores a veterinários e organiza os cuidados dos pets.": "Mobile experience connecting pet owners with veterinarians and organizing pet care.",
-  "OLÁ, BEM-VINDA!": "HELLO, WELCOME!",
-  "Minha plantação": "My crops",
-  "Umidade do solo": "Soil moisture",
-  "Condição ideal ✦": "Ideal conditions ✦",
-  "Monitoramento ativo": "Monitoring active",
-  "💧 Irrigação automática": "💧 Automatic irrigation",
-  "APLICAÇÃO MOBILE": "MOBILE APP",
-  "Fertirrigação inteligente": "Smart fertigation",
-  "Aplicação para apoiar o acompanhamento e a automação de processos de fertirrigação.": "App for monitoring and automating fertigation processes.",
-  "Explorando padrões": "Exploring patterns",
-  "EM EVOLUÇÃO": "IN PROGRESS",
-  "ESTUDOS EM DADOS": "DATA STUDIES",
-  "EM ANDAMENTO": "ONGOING",
-  "Python & análise de dados": "Python & Data Analysis",
-  "Exercícios e projetos de aprendizagem com exploração de dados e fundamentos de Python.": "Hands-on exercises and learning projects focused on data exploration and Python fundamentals.",
-  "✳ Mais projetos e experimentos estão sempre a caminho.": "✳ More projects and experiments are always on the way.",
-  "03 / MINHA CAIXA DE FERRAMENTAS": "03 / MY TOOLBOX",
-  "SKILLS & FERRAMENTAS": "SKILLS & TOOLS",
-  "Gosto de transitar entre diferentes áreas. Estas são algumas das tecnologias, práticas e ferramentas que já fazem parte da minha jornada.": "I enjoy exploring different areas of tech. Here are some of the technologies, practices, and tools I use along the way.",
-  "03 / Dados": "03 / Data",
-  "Da ideia à interface, e da interface à lógica que faz tudo funcionar.": "From the initial idea to the interface — and the logic that brings it to life.",
-  "HABILIDADES EM CONSTANTE EVOLUÇÃO": "ALWAYS GROWING MY SKILLS",
-  "04 / MEU CAMINHO": "04 / MY JOURNEY",
-  "ESTUDOS & EXPERIÊNCIAS": "STUDIES & EXPERIENCE",
-  "Cada desafio é mais uma peça nessa trajetória — e a parte mais interessante é que ela ainda está sendo escrita.": "Every challenge is another part of my journey — and the most exciting part is that I’m still writing it.",
-  "AGORA": "NOW",
-  "Desenvolvimento de software": "Software Development",
-  "Desenvolvimento de aplicações web, explorando front-end, back-end, bancos de dados e integração de sistemas.": "Building web applications while exploring front-end, back-end, databases, and systems integration.",
-  "Python, Dados & Inteligência Artificial": "Python, Data & Artificial Intelligence",
-  "Aprofundamento em programação, análise de dados, bibliotecas Python e fundamentos de machine learning.": "Deepening my knowledge of programming, data analysis, Python libraries, and machine learning fundamentals.",
-  "FORMAÇÃO": "EDUCATION",
-  "Sistemas de Informação": "Information Systems",
-  "Formação superior em tecnologia, com projetos práticos envolvendo aplicações mobile, lógica, programação e resolução de problemas.": "Undergraduate studies in technology, with practical projects involving mobile apps, logic, programming, and problem-solving.",
-  "EXPERIÊNCIA": "EXPERIENCE",
-  "Suporte & infraestrutura de TI": "IT Support & Infrastructure",
-  "Vivência profissional com suporte técnico, hardware, sistemas e atendimento às necessidades de pessoas e equipes.": "Professional experience in technical support, hardware, IT systems, and helping people and teams solve problems.",
-  "05 / VAMOS CRIAR ALGO?": "05 / LET’S BUILD SOMETHING?",
-  "Tem um projeto, uma oportunidade ou só quer trocar uma ideia? Vou adorar conversar com você.": "Have a project, an opportunity, or just want to say hello? I’d love to hear from you.",
-  "Me mande um e-mail": "Send me an email",
-  "WITH PURPOSE AND A LI TTLE MAGIC ✦": "WITH PURPOSE AND A LITTLE MAGIC ✦",
-  "Feito com ♥, café e boas ideias.": "Made with ♥, coffee, and good ideas.",
-  "Luana — All rights reserved.": "Luana — All rights reserved.",
-  "O projeto": "The project",
-  "O que explorei": "What I explored",
-  "Ver código no GitHub ↗": "View code on GitHub ↗",
-  "← Voltar aos projetos": "← Back to projects"
-},
+    "Pular para o conteúdo": "Skip to content",
+    Início: "Home",
+    Sobre: "About",
+    Projetos: "Projects",
+    Skills: "Skills",
+    Jornada: "Journey",
+    "Vamos conversar": "Let’s talk",
+    "PORTFÓLIO CRIATIVO / 2026": "INTERACTIVE PORTFOLIO / 2026",
+    "Oi, eu sou": "Hi, I’m",
+    "Conheça meus projetos": "Explore my projects",
+    "Um pouco sobre mim": "A little about me",
+    Curiosidade: "Curiosity",
+    "é meu combustível.": "fuels me.",
+    "CRIATIVA POR NATUREZA": "CREATIVE BY NATURE",
+    "DESENVOLVENDO SOLUÇÕES": "BUILDING SOLUTIONS",
+    "CÓDIGO COM CRIATIVIDADE": "CODING WITH CREATIVITY",
+    "EXPERIÊNCIAS DIGITAIS": "DIGITAL EXPERIENCES",
+    "SEMPRE APRENDENDO": "ALWAYS LEARNING",
+    "01 / QUEM SOU": "01 / WHO I AM",
+    "Muito prazer, :)": "Nice to meet you, :)",
+    "SOBRE MIM": "ABOUT ME",
+    "✳ Pensamento lógico": "✳ Logical thinking",
+    "↗ Aprendizado contínuo": "↗ Lifelong learning",
+    "♡ Resolução de problemas": "♡ Problem-solving",
+    "Conheça minha trajetória": "Explore my journey",
+    "02 / O QUE EU CRIO": "02 / WHAT I BUILD",
+    "MEUS PROJETOS ✳": "MY PROJECTS ✳",
+    "Uma seleção de trabalhos acadêmicos, cases de produto e experiências práticas. Cada um conta um pouco do meu jeito de pensar e criar.":
+      "A selection of academic work, product case studies, and hands-on projects. Each one reflects how I approach challenges and build solutions.",
+    Todos: "All",
+    Desenvolvimento: "Development",
+    Dados: "Data",
+    "mercado / loja online": "market / online store",
+    "Início Ofertas Categorias": "Home Offers Categories",
+    "OFERTAS DA SEMANA": "WEEKLY DEALS",
+    "Compre sem sair de casa ↗": "Shop from home ↗",
+    Hortifruti: "Fresh produce",
+    Mercearia: "Groceries",
+    Bebidas: "Drinks",
+    "DESENVOLVIMENTO WEB": "WEB DEVELOPMENT",
+    "EM DESENVOLVIMENTO": "IN DEVELOPMENT",
+    "E-commerce de supermercado": "Supermarket e-commerce",
+    "Loja online completa, com autenticação, catálogo, gestão de produtos e painel administrativo.":
+      "Full-featured online store with authentication, product catalog, inventory management, and an admin dashboard.",
+    "minha lista de compras": "my shopping list",
+    "ORGANIZE SUAS COMPRAS": "KEEP SHOPPING ORGANIZED",
+    "Minha lista": "My list",
+    produtos: "products",
+    coletados: "collected",
+    "quase lá! ↗": "almost done! ↗",
+    PRODUTOS: "PRODUCTS",
+    QUANTIDADE: "QUANTITY",
+    Arroz: "Rice",
+    Unidade: "Unit",
+    Leite: "Milk",
+    Litro: "Liter",
+    Maçã: "Apple",
+    Quilograma: "Kilogram",
+    "Enviar lista para API": "Send list to API",
+    "PROJETO ACADÊMICO": "ACADEMIC PROJECT",
+    "Cadastro e Lista de Compras": "Shopping List & Product Manager",
+    "Sistema para cadastrar produtos, acompanhar uma lista de compras e enviar os dados para uma API.":
+      "Web app to manage products, track a shopping list, and send data to an API.",
+    "Olá, Amora! ♡": "Hi, Amora! ♡",
+    "Próximas vacinas": "Upcoming vaccines",
+    "⌕   Encontre um profissional": "⌕   Find a professional",
+    "Encontre um profissional": "Find a professional",
+    Veterinário: "Veterinarian",
+    Vacinas: "Vaccines",
+    "CASE UX/UI": "UX/UI CASE STUDY",
+    "PetHELP — cuidado animal": "PetHELP — Pet Care",
+    "Experiência mobile que conecta tutores a veterinários e organiza os cuidados dos pets.":
+      "Mobile experience connecting pet owners with veterinarians and organizing pet care.",
+    "OLÁ, BEM-VINDA!": "HELLO, WELCOME!",
+    "Minha plantação": "My crops",
+    "Umidade do solo": "Soil moisture",
+    "Condição ideal ✦": "Ideal conditions ✦",
+    "Monitoramento ativo": "Monitoring active",
+    "💧 Irrigação automática": "💧 Automatic irrigation",
+    "APLICAÇÃO MOBILE": "MOBILE APP",
+    "Fertirrigação inteligente": "Smart fertigation",
+    "Aplicação para apoiar o acompanhamento e a automação de processos de fertirrigação.":
+      "App for monitoring and automating fertigation processes.",
+    "Explorando padrões": "Exploring patterns",
+    "EM EVOLUÇÃO": "IN PROGRESS",
+    "ESTUDOS EM DADOS": "DATA STUDIES",
+    "EM ANDAMENTO": "ONGOING",
+    "Python & análise de dados": "Python & Data Analysis",
+    "Exercícios e projetos de aprendizagem com exploração de dados e fundamentos de Python.":
+      "Hands-on exercises and learning projects focused on data exploration and Python fundamentals.",
+    "✳ Mais projetos e experimentos estão sempre a caminho.":
+      "✳ More projects and experiments are always on the way.",
+    "03 / MINHA CAIXA DE FERRAMENTAS": "03 / MY TOOLBOX",
+    "SKILLS & FERRAMENTAS": "SKILLS & TOOLS",
+    "Gosto de transitar entre diferentes áreas. Estas são algumas das tecnologias, práticas e ferramentas que já fazem parte da minha jornada.":
+      "I enjoy exploring different areas of tech. Here are some of the technologies, practices, and tools I use along the way.",
+    "03 / Dados": "03 / Data",
+    "Da ideia à interface, e da interface à lógica que faz tudo funcionar.":
+      "From the initial idea to the interface — and the logic that brings it to life.",
+    "HABILIDADES EM CONSTANTE EVOLUÇÃO": "ALWAYS GROWING MY SKILLS",
+    "04 / MEU CAMINHO": "04 / MY JOURNEY",
+    "ESTUDOS & EXPERIÊNCIAS": "STUDIES & EXPERIENCE",
+    "Cada desafio é mais uma peça nessa trajetória — e a parte mais interessante é que ela ainda está sendo escrita.":
+      "Every challenge is another part of my journey — and the most exciting part is that I’m still writing it.",
+    AGORA: "NOW",
+    "Desenvolvimento de software": "Software Development",
+    "Desenvolvimento de aplicações web, explorando front-end, back-end, bancos de dados e integração de sistemas.":
+      "Building web applications while exploring front-end, back-end, databases, and systems integration.",
+    "Python, Dados & Inteligência Artificial":
+      "Python, Data & Artificial Intelligence",
+    "Aprofundamento em programação, análise de dados, bibliotecas Python e fundamentos de machine learning.":
+      "Deepening my knowledge of programming, data analysis, Python libraries, and machine learning fundamentals.",
+    FORMAÇÃO: "EDUCATION",
+    "Sistemas de Informação": "Information Systems",
+    "Formação superior em tecnologia, com projetos práticos envolvendo aplicações mobile, lógica, programação e resolução de problemas.":
+      "Undergraduate studies in technology, with practical projects involving mobile apps, logic, programming, and problem-solving.",
+    EXPERIÊNCIA: "EXPERIENCE",
+    "Suporte & infraestrutura de TI": "IT Support & Infrastructure",
+    "Vivência profissional com suporte técnico, hardware, sistemas e atendimento às necessidades de pessoas e equipes.":
+      "Professional experience in technical support, hardware, IT systems, and helping people and teams solve problems.",
+    "05 / VAMOS CRIAR ALGO?": "05 / LET’S BUILD SOMETHING?",
+    "Tem um projeto, uma oportunidade ou só quer trocar uma ideia? Vou adorar conversar com você.":
+      "Have a project, an opportunity, or just want to say hello? I’d love to hear from you.",
+    "Me mande um e-mail": "Send me an email",
+    "WITH PURPOSE AND A LI TTLE MAGIC ✦": "WITH PURPOSE AND A LITTLE MAGIC ✦",
+    "Feito com ♥, café e boas ideias.": "Made with ♥, coffee, and good ideas.",
+    "Luana — All rights reserved.": "Luana — All rights reserved.",
+    "O projeto": "The project",
+    "O que explorei": "What I explored",
+    "Ver código no GitHub ↗": "View code on GitHub ↗",
+    "← Voltar aos projetos": "← Back to projects",
+  },
   rich: {
-  ".hero-subtitle": "I turn <em>challenges</em> into digital solutions, <strong>exploring the potential of programming, data, and technology.</strong>",
-  "#sobre-title": "Nice to meet you,<br />I’m <em>Luana.</em>",
-  ".about-text p:nth-child(1)": "I’m an <strong>Information Systems</strong> student passionate about technology, programming, and using code to turn real-world problems into solutions.",
-  ".about-text p:nth-child(2)": "My professional journey began in <strong>IT support and infrastructure</strong>, where I built a solid foundation in technology, troubleshooting, and analytical thinking. Along the way, I expanded my skills through software development and web application projects.",
-  ".about-text p:nth-child(3)": "I’m currently diving deeper into <strong>software development, Python, data analysis, and artificial intelligence</strong>. I’m driven by curiosity, continuous learning, and the desire to turn what I learn into real projects.",
-  "#projetos-title": "Ideas turned into<br /><em>real projects.</em>",
-  "#skills-title": "Between code<br />and <em>possibilities.</em>",
-  "#jornada-title": "A journey<br /><em>in progress.</em>",
-  "#contato-title": "Great ideas<br />deserve <em>connections.</em>",
-  ".market-offer strong": "Make your day,<br />a little easier.",
-  ".pet-happy": "Care that<br /><strong>connects.</strong>"
-},
+    ".hero-subtitle":
+      "I turn <em>challenges</em> into digital solutions, <strong>exploring the potential of programming, data, and technology.</strong>",
+    "#sobre-title": "Nice to meet you,<br />I’m <em>Luana.</em>",
+    ".about-text p:nth-child(1)":
+      "I’m an <strong>Information Systems</strong> student passionate about technology, programming, and using code to turn real-world problems into solutions.",
+    ".about-text p:nth-child(2)":
+      "My professional journey began in <strong>IT support and infrastructure</strong>, where I built a solid foundation in technology, troubleshooting, and analytical thinking. Along the way, I expanded my skills through software development and web application projects.",
+    ".about-text p:nth-child(3)":
+      "I’m currently diving deeper into <strong>software development, Python, data analysis, and artificial intelligence</strong>. I’m driven by curiosity, continuous learning, and the desire to turn what I learn into real projects.",
+    "#projetos-title": "Ideas turned into<br /><em>real projects.</em>",
+    "#skills-title": "Between code<br />and <em>possibilities.</em>",
+    "#jornada-title": "A journey<br /><em>in progress.</em>",
+    "#contato-title": "Great ideas<br />deserve <em>connections.</em>",
+    ".market-offer strong": "Make your day,<br />a little easier.",
+    ".pet-happy": "Care that<br /><strong>connects.</strong>",
+  },
   attributes: {
-  "Ver detalhes do projeto OrderFlow API": "View OrderFlow API project details",
-  "Abrir OrderFlow API": "Open OrderFlow API",
+    "Ver detalhes do projeto OrderFlow API":
+      "View OrderFlow API project details",
+    "Abrir OrderFlow API": "Open OrderFlow API",
 
-  "Navegação principal": "Main navigation",
-  "Luana, voltar ao início": "Luana, go to homepage",
-  "Abrir menu": "Open menu",
-  "Fechar menu": "Close menu",
-  "Alterar idioma": "Change language",
-  "Ativar modo escuro": "Enable dark mode",
-  "Ativar modo claro": "Enable light mode",
-  "Alternar tema": "Toggle theme",
-  "Ilustração decorativa de design e tecnologia": "Decorative illustration of design and technology",
-  "Filtrar projetos": "Filter projects",
-  "Ver detalhes do projeto E-commerce de supermercado": "View supermarket e-commerce project details",
-  "Abrir E-commerce de supermercado": "Open supermarket e-commerce project",
-  "Ver detalhes do projeto Cadastro e Lista de Compras": "View shopping list project details",
-  "Abrir Cadastro e Lista de Compras": "Open shopping list project",
-  "Ver detalhes do projeto PetHELP": "View PetHELP project details",
-  "Abrir PetHELP": "Open PetHELP project",
-  "Ver detalhes do projeto de fertirrigação": "View fertigation project details",
-  "Abrir Fertirrigação inteligente": "Open smart fertigation project",
-  "Ver detalhes de Estudos em dados com Python": "View Python data studies details",
-  "Abrir Python e análise de dados": "Open Python and data analysis project",
-  "Categorias de habilidades": "Skill categories",
-  "Voltar ao topo": "Back to top",
-  "Fechar detalhes": "Close details"
-},
+    "Navegação principal": "Main navigation",
+    "Luana, voltar ao início": "Luana, go to homepage",
+    "Abrir menu": "Open menu",
+    "Fechar menu": "Close menu",
+    "Alterar idioma": "Change language",
+    "Ativar modo escuro": "Enable dark mode",
+    "Ativar modo claro": "Enable light mode",
+    "Alternar tema": "Toggle theme",
+    "Ilustração decorativa de design e tecnologia":
+      "Decorative illustration of design and technology",
+    "Filtrar projetos": "Filter projects",
+    "Ver detalhes do projeto E-commerce de supermercado":
+      "View supermarket e-commerce project details",
+    "Abrir E-commerce de supermercado": "Open supermarket e-commerce project",
+    "Ver detalhes do projeto Cadastro e Lista de Compras":
+      "View shopping list project details",
+    "Abrir Cadastro e Lista de Compras": "Open shopping list project",
+    "Ver detalhes do projeto PetHELP": "View PetHELP project details",
+    "Abrir PetHELP": "Open PetHELP project",
+    "Ver detalhes do projeto de fertirrigação":
+      "View fertigation project details",
+    "Abrir Fertirrigação inteligente": "Open smart fertigation project",
+    "Ver detalhes de Estudos em dados com Python":
+      "View Python data studies details",
+    "Abrir Python e análise de dados": "Open Python and data analysis project",
+    "Categorias de habilidades": "Skill categories",
+    "Voltar ao topo": "Back to top",
+    "Fechar detalhes": "Close details",
+  },
   projects: {
-  "orderflow": {
-    "category": "BACK-END · REST API · LEARNING PROJECT",
-    "title": "OrderFlow API — Order Management",
-    "lead": "A REST API for learning business logic, data persistence, and automated testing with Python.",
-    "description": "A hands-on back-end learning project built with FastAPI and SQLAlchemy. The API manages customers, products, and orders; validates inputs; logs requests; and generates endpoint documentation. It uses SQLite by default and can be configured for PostgreSQL.",
-    "highlights": [
-      "Created REST endpoints to add and retrieve customers, products, and orders.",
-      "Implemented order creation and cancellation with inventory updates.",
-      "Validated data with Pydantic and handled HTTP responses 404, 409, and 422.",
-      "Added basic order-creation idempotency and request logs with X-Request-ID.",
-      "Included 15 automated tests with Pytest and OpenAPI/Swagger documentation."
-    ],
-    "tech": ["Python", "FastAPI", "Pydantic", "SQLAlchemy", "SQLite", "Pytest"]
-  },
+    orderflow: {
+      category: "BACK-END · REST API · LEARNING PROJECT",
+      title: "OrderFlow API — Order Management",
+      lead: "A REST API for learning business logic, data persistence, and automated testing with Python.",
+      description:
+        "A hands-on back-end learning project built with FastAPI and SQLAlchemy. The API manages customers, products, and orders; validates inputs; logs requests; and generates endpoint documentation. It uses SQLite by default and can be configured for PostgreSQL.",
+      highlights: [
+        "Created REST endpoints to add and retrieve customers, products, and orders.",
+        "Implemented order creation and cancellation with inventory updates.",
+        "Validated data with Pydantic and handled HTTP responses 404, 409, and 422.",
+        "Added basic order-creation idempotency and request logs with X-Request-ID.",
+        "Included 15 automated tests with Pytest and OpenAPI/Swagger documentation.",
+      ],
+      tech: ["Python", "FastAPI", "Pydantic", "SQLAlchemy", "SQLite", "Pytest"],
+    },
 
-  "lista-compras": {
-    "category": "WEB DEVELOPMENT · ACADEMIC PROJECT",
-    "title": "Shopping List & Product Manager",
-    "lead": "From organizing products to tracking purchases and sending data to an API.",
-    "description": "Built for a Web Technology course, this app lets users add, edit, and remove products, organize shopping lists, track quantities, and send data to an API using JavaScript and MockAPI.",
-    "highlights": [
-      "Add, edit, and delete products with units, quantities, and barcodes.",
-      "Store product information locally using the browser’s localStorage.",
-      "Track purchased quantities and visually mark collected items.",
-      "Send the completed shopping list to MockAPI via a POST request."
-    ],
-    "tech": [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "localStorage",
-      "Fetch API",
-      "MockAPI"
-    ]
+    "lista-compras": {
+      category: "WEB DEVELOPMENT · ACADEMIC PROJECT",
+      title: "Shopping List & Product Manager",
+      lead: "From organizing products to tracking purchases and sending data to an API.",
+      description:
+        "Built for a Web Technology course, this app lets users add, edit, and remove products, organize shopping lists, track quantities, and send data to an API using JavaScript and MockAPI.",
+      highlights: [
+        "Add, edit, and delete products with units, quantities, and barcodes.",
+        "Store product information locally using the browser’s localStorage.",
+        "Track purchased quantities and visually mark collected items.",
+        "Send the completed shopping list to MockAPI via a POST request.",
+      ],
+      tech: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "localStorage",
+        "Fetch API",
+        "MockAPI",
+      ],
+    },
+    mercado: {
+      category: "WEB DEVELOPMENT · REAL-WORLD PROJECT",
+      title: "Supermarket e-commerce",
+      lead: "An online shopping system connecting store operations with the customer experience.",
+      description:
+        "A web application with a product storefront, customer accounts, and tools to manage the product catalog and inventory. Development is ongoing, with additional features being built and improved.",
+      highlights: [
+        "Built routes and an API using Node.js and Express.",
+        "Stored application data in PostgreSQL.",
+        "Implemented authentication, password recovery, and email verification flows.",
+        "Created an admin panel with filters, image uploads, and inventory management.",
+      ],
+      tech: [
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "JavaScript",
+        "HTML/CSS",
+        "EJS",
+      ],
+    },
+    pethelp: {
+      category: "UX/UI DESIGN · ACADEMIC CASE STUDY",
+      title: "PetHELP — Pet Care",
+      lead: "A digital experience designed to make pet care easier and more connected.",
+      description:
+        "Mobile app concept designed to connect pet owners with veterinary professionals, bringing together service discovery, appointment scheduling, and organized vaccination records.",
+      highlights: [
+        "Mapped user journeys for pet owners and veterinary professionals.",
+        "Designed the information architecture and navigation.",
+        "Created components and visual patterns in Figma.",
+        "Designed appointment-booking and vaccine-tracking flows.",
+      ],
+      tech: ["Figma", "UX/UI", "Design System", "Prototyping", "User flows"],
+    },
+    fertirrigacao: {
+      category: "MOBILE DEVELOPMENT · ACADEMIC PROJECT",
+      title: "Smart fertigation",
+      lead: "Technology applied to monitoring and automating agricultural processes.",
+      description:
+        "An academic application exploring the intersection of software and smart fertigation, designed to support monitoring and actions related to crop cultivation.",
+      highlights: [
+        "Developed a mobile interface with Flutter.",
+        "Designed a clear view of key monitoring information.",
+        "Explored integration between apps and connected devices.",
+        "Practiced programming logic, components, and application development.",
+      ],
+      tech: ["Flutter", "Dart", "Mobile", "IoT", "User interfaces"],
+    },
+    dados: {
+      category: "DATA · ONGOING STUDIES",
+      title: "Python & Data Analysis",
+      lead: "Learning to turn data into better questions, insights, and decisions.",
+      description:
+        "An evolving collection of exercises and experiments using Python, Jupyter, and Pandas, with a focus on building strong foundations in programming, data manipulation, and analytical thinking.",
+      highlights: [
+        "Practiced Python logic and data structures.",
+        "Explored Pandas and notebooks through initial experiments.",
+        "Learned to organize, load, and explore datasets.",
+        "Gradually progressing toward data science projects.",
+      ],
+      tech: ["Python", "Pandas", "Jupyter", "Programming fundamentals"],
+    },
   },
-  "mercado": {
-    "category": "WEB DEVELOPMENT · REAL-WORLD PROJECT",
-    "title": "Supermarket e-commerce",
-    "lead": "An online shopping system connecting store operations with the customer experience.",
-    "description": "A web application with a product storefront, customer accounts, and tools to manage the product catalog and inventory. Development is ongoing, with additional features being built and improved.",
-    "highlights": [
-      "Built routes and an API using Node.js and Express.",
-      "Stored application data in PostgreSQL.",
-      "Implemented authentication, password recovery, and email verification flows.",
-      "Created an admin panel with filters, image uploads, and inventory management."
-    ],
-    "tech": [
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "JavaScript",
-      "HTML/CSS",
-      "EJS"
-    ]
-  },
-  "pethelp": {
-    "category": "UX/UI DESIGN · ACADEMIC CASE STUDY",
-    "title": "PetHELP — Pet Care",
-    "lead": "A digital experience designed to make pet care easier and more connected.",
-    "description": "Mobile app concept designed to connect pet owners with veterinary professionals, bringing together service discovery, appointment scheduling, and organized vaccination records.",
-    "highlights": [
-      "Mapped user journeys for pet owners and veterinary professionals.",
-      "Designed the information architecture and navigation.",
-      "Created components and visual patterns in Figma.",
-      "Designed appointment-booking and vaccine-tracking flows."
-    ],
-    "tech": [
-      "Figma",
-      "UX/UI",
-      "Design System",
-      "Prototyping",
-      "User flows"
-    ]
-  },
-  "fertirrigacao": {
-    "category": "MOBILE DEVELOPMENT · ACADEMIC PROJECT",
-    "title": "Smart fertigation",
-    "lead": "Technology applied to monitoring and automating agricultural processes.",
-    "description": "An academic application exploring the intersection of software and smart fertigation, designed to support monitoring and actions related to crop cultivation.",
-    "highlights": [
-      "Developed a mobile interface with Flutter.",
-      "Designed a clear view of key monitoring information.",
-      "Explored integration between apps and connected devices.",
-      "Practiced programming logic, components, and application development."
-    ],
-    "tech": [
-      "Flutter",
-      "Dart",
-      "Mobile",
-      "IoT",
-      "User interfaces"
-    ]
-  },
-  "dados": {
-    "category": "DATA · ONGOING STUDIES",
-    "title": "Python & Data Analysis",
-    "lead": "Learning to turn data into better questions, insights, and decisions.",
-    "description": "An evolving collection of exercises and experiments using Python, Jupyter, and Pandas, with a focus on building strong foundations in programming, data manipulation, and analytical thinking.",
-    "highlights": [
-      "Practiced Python logic and data structures.",
-      "Explored Pandas and notebooks through initial experiments.",
-      "Learned to organize, load, and explore datasets.",
-      "Gradually progressing toward data science projects."
-    ],
-    "tech": [
-      "Python",
-      "Pandas",
-      "Jupyter",
-      "Programming fundamentals"
-    ]
-  }
-},
   skills: {
-  "dev": {
-    "title": "Development",
-    "description": "From an initial idea to the interface — and the logic that makes it all work."
+    dev: {
+      title: "Development",
+      description:
+        "From an initial idea to the interface — and the logic that makes it all work.",
+    },
+    design: {
+      title: "Design & Product",
+      description: "Thoughtful, consistent experiences designed around people.",
+      items: [
+        "Figma",
+        "UI Design",
+        "UX Design",
+        "Design System",
+        "Auto Layout",
+        "Prototyping",
+        "Illustrator / Photoshop",
+      ],
+    },
+    data: {
+      title: "Data & Tools",
+      description:
+        "Curiosity-driven exploration to understand information and find new possibilities.",
+    },
   },
-  "design": {
-    "title": "Design & Product",
-    "description": "Thoughtful, consistent experiences designed around people.",
-    "items": [
-      "Figma",
-      "UI Design",
-      "UX Design",
-      "Design System",
-      "Auto Layout",
-      "Prototyping",
-      "Illustrator / Photoshop"
-    ]
-  },
-  "data": {
-    "title": "Data & Tools",
-    "description": "Curiosity-driven exploration to understand information and find new possibilities."
-  }
-},
 };
 
 let currentLanguage = "pt";
 
-const richOriginals = Object.entries(EN.rich).map(([selector, translated]) => {
-  const element = document.querySelector(selector);
-  return { element, original: element?.innerHTML, translated };
-}).filter(({element}) => element);
+const SKILLS_PORTFOLIO_PT = {
+  dev: {
+    title: "Back-end & Desenvolvimento",
+    description: "APIs REST, regras de negócio, bancos de dados, validações e testes automatizados.",
+  },
+  data: {
+    title: "Dados & Ferramentas",
+    description: "Análise de dados, consultas SQL e ferramentas para explorar informações.",
+  },
+  design: {
+    title: "Design & Produto",
+    description: "Conhecimentos em interfaces e experiência do usuário como complemento ao desenvolvimento.",
+  },
+};
 
-// Salva o conteúdo original dos nós de texto; não altera <em>, <strong>, animações ou botões.
-const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+
+const BACKEND_PRIORITY = [
+  "Python", "FastAPI", "Node.js", "Express", "APIs REST",
+  "PostgreSQL", "SQLite", "SQLAlchemy", "Pydantic", "Pytest",
+];
+
+for (const [area, content] of Object.entries(SKILLS_PORTFOLIO_PT)) {
+  if (SKILLS[area]) Object.assign(SKILLS[area], content);
+}
+if (SKILLS.dev && Array.isArray(SKILLS.dev.items)) {
+  const original = SKILLS.dev.items.filter(item => item !== "REST APIs");
+  SKILLS.dev.items = [...new Set([...BACKEND_PRIORITY, ...original])];
+}
+
+
+if (typeof EN !== "undefined") {
+  EN.skills ??= {};
+  const enSkills = {
+    dev: {
+      title: "Back-end Development",
+      description: "REST APIs, business logic, databases, validation, and automated testing.",
+    },
+    data: {
+      title: "Data & Tools",
+      description: "Data analysis, SQL queries, and tools for exploring information.",
+    },
+    design: {
+      title: "Design & Product",
+      description: "UI and user experience knowledge as a complement to software development.",
+    },
+  };
+  for (const [area, content] of Object.entries(enSkills)) {
+    EN.skills[area] = { ...(EN.skills[area] ?? {}), ...content };
+  }
+  if (SKILLS.dev) {
+    EN.skills.dev.items = SKILLS.dev.items.map(item =>
+      item === "APIs REST" ? "REST APIs" : item
+    );
+  }
+  EN.text ??= {};
+  Object.assign(EN.text, {
+    "01 / Back-end & Dev": "01 / Back-end & Dev",
+    "02 / Dados & Ferramentas": "02 / Data & Tools",
+    "03 / Design": "03 / Design",
+  });
+}
+
+
+const richOriginals = Object.entries(EN.rich)
+  .map(([selector, translated]) => {
+    const element = document.querySelector(selector);
+    return { element, original: element?.innerHTML, translated };
+  })
+  .filter(({ element }) => element);
+
+
+const textWalker = document.createTreeWalker(
+  document.body,
+  NodeFilter.SHOW_TEXT,
+);
 const translatedNodes = [];
 while (textWalker.nextNode()) {
   const node = textWalker.currentNode;
-  if (!node.parentElement || node.parentElement.closest(
-    "#project-dialog, #skill-panel, #toast, .language-toggle, script, style"
-  )) continue;
-  if (richOriginals.some(({element}) => element.contains(node))) continue;
+  if (
+    !node.parentElement ||
+    node.parentElement.closest(
+      "#project-dialog, #skill-panel, #toast, .language-toggle, script, style",
+    )
+  )
+    continue;
+  if (richOriginals.some(({ element }) => element.contains(node))) continue;
   const original = node.nodeValue;
   const key = original.replace(/\s+/g, " ").trim();
-  // Captura inclusive termos ainda não traduzidos para diagnóstico/atualizações.
+
   if (Object.prototype.hasOwnProperty.call(EN.text, key)) {
-    translatedNodes.push({node, original, key});
+    translatedNodes.push({ node, original, key });
   }
 }
 
 const attributeOriginals = [];
-document.querySelectorAll("[aria-label], [title], [alt]").forEach(element => {
+document.querySelectorAll("[aria-label], [title], [alt]").forEach((element) => {
   for (const name of ["aria-label", "title", "alt"]) {
     if (element.hasAttribute(name)) {
       const original = element.getAttribute(name);
       if (Object.prototype.hasOwnProperty.call(EN.attributes, original)) {
-        attributeOriginals.push({element, name, original});
+        attributeOriginals.push({ element, name, original });
       }
     }
   }
@@ -510,16 +605,16 @@ function translateLanguage(language, save = true) {
   const english = currentLanguage === "en";
 
   // Troca os textos com trechos em negrito/itálico sem eliminar o destaque visual.
-  for (const {element, original, translated} of richOriginals) {
+  for (const { element, original, translated } of richOriginals) {
     element.innerHTML = english ? translated : original;
   }
 
-  for (const {node, original, key} of translatedNodes) {
+  for (const { node, original, key } of translatedNodes) {
     const match = /^(\s*)([\s\S]*?)(\s*)$/.exec(original);
     node.nodeValue = english ? match[1] + EN.text[key] + match[3] : original;
   }
 
-  for (const {element, name, original} of attributeOriginals) {
+  for (const { element, name, original } of attributeOriginals) {
     element.setAttribute(name, english ? EN.attributes[original] : original);
   }
 
@@ -527,35 +622,50 @@ function translateLanguage(language, save = true) {
   document.title = english
     ? "Luana — Code, Data & Technology"
     : "Luana — Código, Dados & Tecnologia";
-  document.querySelector('meta[name="description"]')?.setAttribute(
-    "content", english
-      ? "Luana's interactive portfolio — software development, Python, data, and technology."
-      : "Portfólio pessoal de Luana — desenvolvimento de software, Python, dados e tecnologia."
-  );
+  document
+    .querySelector('meta[name="description"]')
+    ?.setAttribute(
+      "content",
+      english
+        ? "Luana's interactive portfolio — software development, Python, data, and technology."
+        : "Portfólio pessoal de Luana — desenvolvimento de software, Python, dados e tecnologia.",
+    );
 
   const button = document.querySelector(".language-toggle");
   if (button) {
     button.textContent = english ? "PT" : "EN";
-    button.setAttribute("aria-label", english ? "Mudar para português" : "Switch to English");
-    button.setAttribute("title", english ? "Mudar para português" : "Switch to English");
+    button.setAttribute(
+      "aria-label",
+      english ? "Mudar para português" : "Switch to English",
+    );
+    button.setAttribute(
+      "title",
+      english ? "Mudar para português" : "Switch to English",
+    );
     button.setAttribute("aria-pressed", String(english));
   }
   syncThemeButton();
   menuToggle?.setAttribute(
     "aria-label",
     english
-      ? (menuToggle.getAttribute("aria-expanded") === "true" ? "Close menu" : "Open menu")
-      : (menuToggle.getAttribute("aria-expanded") === "true" ? "Fechar menu" : "Abrir menu")
+      ? menuToggle.getAttribute("aria-expanded") === "true"
+        ? "Close menu"
+        : "Open menu"
+      : menuToggle.getAttribute("aria-expanded") === "true"
+        ? "Fechar menu"
+        : "Abrir menu",
   );
 
-  // Recria o painel de skills no idioma escolhido, sem mudar a aba selecionada.
   const activeSkill = document.querySelector(".skill-tab.active");
   if (activeSkill) chooseSkill(activeSkill);
   // Se um projeto estiver aberto, atualiza seu conteúdo sem fechar a janela.
   if (dialog?.open && activeProjectId) renderProject(activeProjectId);
   if (save) {
-    try { localStorage.setItem("luana-language", currentLanguage); }
-    catch (_) { /* Armazenamento indisponível. */ }
+    try {
+      localStorage.setItem("luana-language", currentLanguage);
+    } catch (_) {
+      /* Armazenamento indisponível. */
+    }
   }
 }
 
@@ -629,8 +739,12 @@ menuToggle?.addEventListener("click", () => {
   menuToggle.setAttribute(
     "aria-label",
     expanded
-      ? (currentLanguage === "en" ? "Open menu" : "Abrir menu")
-      : (currentLanguage === "en" ? "Close menu" : "Fechar menu"),
+      ? currentLanguage === "en"
+        ? "Open menu"
+        : "Abrir menu"
+      : currentLanguage === "en"
+        ? "Close menu"
+        : "Fechar menu",
   );
   menu.classList.toggle("open", !expanded);
 });
@@ -638,7 +752,10 @@ $$(".nav-link, .brand, .nav-contact").forEach((link) =>
   link.addEventListener("click", () => {
     menu.classList.remove("open");
     menuToggle?.setAttribute("aria-expanded", "false");
-    menuToggle?.setAttribute("aria-label", currentLanguage === "en" ? "Open menu" : "Abrir menu");
+    menuToggle?.setAttribute(
+      "aria-label",
+      currentLanguage === "en" ? "Open menu" : "Abrir menu",
+    );
   }),
 );
 document.addEventListener("keydown", (event) => {
@@ -679,8 +796,12 @@ function syncThemeButton() {
   themeButton?.setAttribute(
     "aria-label",
     document.body.classList.contains("dark")
-      ? (currentLanguage === "en" ? "Enable light mode" : "Ativar modo claro")
-      : (currentLanguage === "en" ? "Enable dark mode" : "Ativar modo escuro"),
+      ? currentLanguage === "en"
+        ? "Enable light mode"
+        : "Ativar modo claro"
+      : currentLanguage === "en"
+        ? "Enable dark mode"
+        : "Ativar modo escuro",
   );
   document
     .querySelector('meta[name="theme-color"]')
@@ -726,8 +847,10 @@ const skillTabs = $$(".skill-tab");
 const panel = $("#skill-panel");
 function chooseSkill(tab) {
   const base = SKILLS[tab.dataset.skill];
-  const data = currentLanguage === "en"
-    ? {...base, ...EN.skills[tab.dataset.skill]} : base;
+  const data =
+    currentLanguage === "en"
+      ? { ...base, ...EN.skills[tab.dataset.skill] }
+      : base;
   if (!data) return;
   skillTabs.forEach((item) => {
     const selected = item === tab;
@@ -740,8 +863,11 @@ function chooseSkill(tab) {
   $("#skill-category-description").textContent = data.description;
   $(".skill-icon").textContent = data.icon;
   const skillFootnote = $(".skill-panel-bottom span:first-child");
-  if (skillFootnote) skillFootnote.textContent = currentLanguage === "en"
-    ? "ALWAYS GROWING MY SKILLS" : "HABILIDADES EM CONSTANTE EVOLUÇÃO";
+  if (skillFootnote)
+    skillFootnote.textContent =
+      currentLanguage === "en"
+        ? "ALWAYS GROWING MY SKILLS"
+        : "HABILIDADES EM CONSTANTE EVOLUÇÃO";
   const chips = $("#skill-chips");
   chips.replaceChildren(
     ...data.items.map((item) => {
@@ -775,38 +901,47 @@ let activeProjectId = null;
 function renderProject(id) {
   const base = PROJECTS[id];
   if (!base || !dialog) return;
-  const data = currentLanguage === "en" ? {...base, ...EN.projects[id]} : base;
+  const data =
+    currentLanguage === "en" ? { ...base, ...EN.projects[id] } : base;
   $("#dialog-type").textContent = data.category;
   $("#dialog-title").textContent = data.title;
   $("#dialog-lead").textContent = data.lead;
   $("#dialog-description").textContent = data.description;
   $("#dialog-points").replaceChildren(
-    ...data.highlights.map(item => {
+    ...data.highlights.map((item) => {
       const li = document.createElement("li");
       li.textContent = item;
       return li;
-    })
+    }),
   );
   $("#dialog-tech").replaceChildren(
-    ...data.tech.map(item => {
+    ...data.tech.map((item) => {
       const tag = document.createElement("span");
       tag.textContent = item;
       return tag;
-    })
+    }),
   );
   const repoLink = $("#dialog-repo");
   if (repoLink) {
     repoLink.hidden = !data.repo;
     if (data.repo) {
       repoLink.href = data.repo;
-      repoLink.textContent = id === "pethelp"
-        ? (currentLanguage === "en" ? "View prototype on Figma ↗" : "Ver protótipo no Figma ↗")
-        : (currentLanguage === "en" ? "View code on GitHub ↗" : "Ver código no GitHub ↗");
+      repoLink.textContent =
+        id === "pethelp"
+          ? currentLanguage === "en"
+            ? "View prototype on Figma ↗"
+            : "Ver protótipo no Figma ↗"
+          : currentLanguage === "en"
+            ? "View code on GitHub ↗"
+            : "Ver código no GitHub ↗";
     } else repoLink.removeAttribute("href");
   }
-  $(".dialog-grid > div:first-child h3").textContent = currentLanguage === "en" ? "The project" : "O projeto";
-  $(".dialog-grid > div:last-child h3").textContent = currentLanguage === "en" ? "What I explored" : "O que explorei";
-  $(".dialog-back").textContent = currentLanguage === "en" ? "← Back to projects" : "← Voltar aos projetos";
+  $(".dialog-grid > div:first-child h3").textContent =
+    currentLanguage === "en" ? "The project" : "O projeto";
+  $(".dialog-grid > div:last-child h3").textContent =
+    currentLanguage === "en" ? "What I explored" : "O que explorei";
+  $(".dialog-back").textContent =
+    currentLanguage === "en" ? "← Back to projects" : "← Voltar aos projetos";
 }
 function openProject(id) {
   if (!PROJECTS[id] || !dialog) return;
@@ -851,15 +986,27 @@ function toast(message) {
 }
 $("#email-cta")?.addEventListener("click", () => {
   if (!CONFIG.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(CONFIG.email)) {
-    toast(currentLanguage === "en" ? "Email address is not configured." : "E-mail não configurado.");
+    toast(
+      currentLanguage === "en"
+        ? "Email address is not configured."
+        : "E-mail não configurado.",
+    );
     return;
   }
-  const subject = encodeURIComponent(currentLanguage === "en" ? "Hi Luana! I saw your portfolio" : "Olá, Luana! Vi seu portfólio");
+  const subject = encodeURIComponent(
+    currentLanguage === "en"
+      ? "Hi Luana! I saw your portfolio"
+      : "Olá, Luana! Vi seu portfólio",
+  );
   window.location.href = `mailto:${CONFIG.email}?subject=${subject}`;
 });
 $("#linkedin-cta")?.addEventListener("click", () => {
   if (!/^https:\/\/(www\.)?linkedin\.com\//i.test(CONFIG.linkedin)) {
-    toast(currentLanguage === "en" ? "LinkedIn is not configured." : "LinkedIn não configurado.");
+    toast(
+      currentLanguage === "en"
+        ? "LinkedIn is not configured."
+        : "LinkedIn não configurado.",
+    );
     return;
   }
   window.open(CONFIG.linkedin, "_blank", "noopener,noreferrer");
@@ -919,6 +1066,9 @@ if (
 
 // Inicializa o idioma após registrar todos os componentes e eventos.
 let savedLanguage = "pt";
-try { savedLanguage = localStorage.getItem("luana-language") === "en" ? "en" : "pt"; }
-catch (_) { /* Sem armazenamento local. */ }
+try {
+  savedLanguage = localStorage.getItem("luana-language") === "en" ? "en" : "pt";
+} catch (_) {
+  /* Sem armazenamento local. */
+}
 translateLanguage(savedLanguage, false);

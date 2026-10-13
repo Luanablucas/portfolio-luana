@@ -1,227 +1,1003 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f9f5f1">
-  <meta name="description" content="Portfólio de Luana — projetos que unem design, desenvolvimento e dados, com criatividade e propósito.">
-  <title>Luana — Design, Código & Ideias</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#principal">Pular para o conteúdo</a>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <div class="cursor-halo" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f9f5f1" />
+    <meta name="description" content="Portfólio pessoal de Luana — desenvolvimento de software, Python, dados e tecnologia." />
+    <title>Luana — Código, Dados & Tecnologia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#principal">Pular para o conteúdo</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-halo" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
 
-  <header class="site-header" id="inicio">
-    <nav class="nav container" aria-label="Navegação principal">
-      <a class="brand" href="#inicio" aria-label="Luana, voltar ao início">luana<span class="brand-dot">.</span><span class="brand-spark">✳</span></a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span>
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a class="nav-link is-active" href="#inicio">Início</a>
-        <a class="nav-link" href="#sobre">Sobre</a>
-        <a class="nav-link" href="#projetos">Projetos</a>
-        <a class="nav-link" href="#habilidades">Skills</a>
-        <a class="nav-link" href="#jornada">Jornada</a>
-      </div>
-      <div class="nav-actions">
-        <button class="theme-toggle" type="button" aria-label="Ativar modo escuro" title="Alternar tema">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.3 15.6A8.7 8.7 0 0 1 8.4 3.7a8.7 8.7 0 1 0 11.9 11.9Z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <header class="site-header" id="inicio">
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="Luana, voltar ao início"
+          >luana<span class="brand-dot">.</span
+          ><span class="brand-spark">✳</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span><span></span>
         </button>
-        <a class="nav-contact magnetic" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="principal">
-    <section class="hero section-pad" aria-labelledby="hero-title">
-      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow hero-kicker rise-in"><span class="status-dot"></span> PORTFÓLIO CRIATIVO / 2026</div>
-          <h1 class="hero-title rise-in" id="hero-title">Oi, eu sou<br><span class="title-accent">Luana<span class="hand-drawn-underline" aria-hidden="true"></span></span><span class="title-period">.</span></h1>
-          <p class="hero-subtitle rise-in">Transformo <em>ideias</em> em experiências digitais, unindo <strong>design, tecnologia e um olhar atento aos detalhes.</strong></p>
-          <div class="hero-cta rise-in">
-            <a href="#projetos" class="button button-primary magnetic">Conheça meus projetos <span class="arrow-circle" aria-hidden="true">↗</span></a>
-            <a href="#sobre" class="text-link">Um pouco sobre mim <span aria-hidden="true">↓</span></a>
-          </div>
-          <div class="hero-footer rise-in"><span class="hero-footer-line"></span> TECH <span class="sep">✳</span> UX/UI <span class="sep">✳</span> CREATIVE THINKING</div>
+        <div class="nav-links" id="nav-links">
+          <a class="nav-link is-active" href="#inicio">Início</a>
+          <a class="nav-link" href="#sobre">Sobre</a>
+          <a class="nav-link" href="#projetos">Projetos</a>
+          <a class="nav-link" href="#habilidades">Skills</a>
+          <a class="nav-link" href="#jornada">Jornada</a>
         </div>
-        <div class="hero-visual rise-in" aria-label="Ilustração decorativa de design e tecnologia">
-          <div class="visual-orbit visual-orbit-one"></div>
-          <div class="visual-orbit visual-orbit-two"></div>
-          <div class="orbit-star orbit-star-top">✦</div>
-          <div class="orbit-star orbit-star-bottom">✳</div>
-          <div class="hero-art-board" id="hero-art">
-            <span class="board-caption">A little bit of everything</span>
-            <span class="board-stamp">LUANA<br>STUDIO <span>✳</span></span>
-            <div class="art-main-letter">L<span class="art-flower">✳</span></div>
-            <div class="art-crosses">+ + +</div>
-            <div class="art-bottom">design<br>& development<span> ↗</span></div>
-          </div>
-          <div class="floating-ticket ticket-top"><span class="mini-flower">✺</span><span>Curiosidade<br><strong>é meu combustível.</strong></span></div>
-          <div class="floating-ticket ticket-bottom"><span class="ticket-asterisk">✳</span> CRIATIVA POR NATUREZA</div>
+        <div class="nav-actions">
+          <button
+            class="language-toggle"
+    aria-live="polite"
+            type="button"
+            aria-label="Switch to English"
+            title="Alterar idioma"
+          >
+            EN
+          </button>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Ativar modo escuro"
+            title="Alternar tema"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <path
+                d="M20.3 15.6A8.7 8.7 0 0 1 8.4 3.7a8.7 8.7 0 1 0 11.9 11.9Z"
+              />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+              />
+            </svg>
+          </button>
+          <a class="nav-contact magnetic" href="#contato"
+            >Vamos conversar <span aria-hidden="true">↗</span></a
+          >
         </div>
-      </div>
-      <a class="hero-scroll" href="#sobre"><span class="scroll-mouse" aria-hidden="true"><span></span></span> SCROLL TO EXPLORE</a>
-    </section>
+      </nav>
+    </header>
 
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>DESIGN COM PROPÓSITO <i>✳</i> CÓDIGO COM CRIATIVIDADE <i>✳</i> EXPERIÊNCIAS DIGITAIS <i>✳</i> SEMPRE APRENDENDO <i>✳</i></span>
-        <span>DESIGN COM PROPÓSITO <i>✳</i> CÓDIGO COM CRIATIVIDADE <i>✳</i> EXPERIÊNCIAS DIGITAIS <i>✳</i> SEMPRE APRENDENDO <i>✳</i></span>
-      </div>
-    </div>
-
-    <section class="about section-pad" id="sobre" aria-labelledby="sobre-title">
-      <div class="container">
-        <div class="section-top reveal"><span class="section-index">01 / QUEM SOU</span><span class="fine-line"></span><span class="section-side-note">Muito prazer, :)</span></div>
-        <div class="about-grid">
-          <div class="about-photo-wrap reveal">
-            <div class="photo-backdrop"></div>
-            <!-- trocar aqui -->
-            <img class="about-photo" src="./assets/foto-perfil.svg" alt="Ilustração temporária: substitua pela sua foto pessoal">
-            <div class="photo-scribble" aria-hidden="true">✳</div>
-            <div class="photo-label">the face behind<br><strong>the pixels ♡</strong></div>
-            <div class="photo-corner-label">FIG. 001 — THAT'S ME</div>
-          </div>
-          <div class="about-copy reveal">
-            <span class="eyebrow">SOBRE MIM <span class="eyebrow-spark">✦</span></span>
-            <h2 class="section-heading" id="sobre-title">Prazer,<br>sou a <em>Luana.</em></h2>
-            <div class="about-text">
-              <p>Sou estudante de <strong>Sistemas de Informação</strong> e apaixonada por encontrar o ponto de encontro entre <strong>tecnologia, design e pessoas.</strong></p>
-              <p>Minha trajetória passa por suporte e infraestrutura de TI, projetos de desenvolvimento e experiências de UX/UI. Gosto de entender o problema, testar possibilidades e construir soluções que sejam bonitas, úteis e bem pensadas.</p>
-              <p>Hoje sigo explorando <strong>desenvolvimento web, produto digital e dados</strong> — com curiosidade, cuidado e vontade constante de aprender.</p>
+    <main id="principal">
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow hero-kicker rise-in">
+              <span class="status-dot"></span> PORTFÓLIO / 2026
             </div>
-            <div class="about-pills"><span>✳ Criatividade</span><span>↗ Visão de produto</span><span>♡ Atenção aos detalhes</span></div>
-            <a class="outline-link magnetic" href="#jornada">Conheça minha trajetória <span aria-hidden="true">↗</span></a>
+            <h1 class="hero-title rise-in" id="hero-title">
+              Oi, eu sou<br /><span class="title-accent"
+                >Luana<span
+                  class="hand-drawn-underline"
+                  aria-hidden="true"
+                ></span></span
+              ><span class="title-period">.</span>
+            </h1>
+            <p class="hero-subtitle rise-in">
+              Transformo <em>desafios</em> em soluções digitais,
+              <strong
+                >explorando o potencial da programação, dos dados e da
+                tecnologia</strong
+              >
+            </p>
+            <div class="hero-cta rise-in">
+              <a href="#projetos" class="button button-primary magnetic"
+                >Conheça meus projetos
+                <span class="arrow-circle" aria-hidden="true">↗</span></a
+              >
+              <a href="#sobre" class="text-link"
+                >Um pouco sobre mim <span aria-hidden="true">↓</span></a
+              >
+            </div>
+            <div class="hero-footer rise-in">
+              <span class="hero-footer-line"></span> DATA SCIENCE 
+              <span class="sep">✳</span> DEV  <span class="sep">✳</span> FULLSTACK
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects section-pad" id="projetos" aria-labelledby="projetos-title">
-      <div class="container">
-        <div class="section-top reveal"><span class="section-index">02 / O QUE EU CRIO</span><span class="fine-line"></span><span class="section-side-note">Selected work — 2024/26</span></div>
-        <div class="projects-head reveal">
-          <div><span class="eyebrow">MEUS PROJETOS ✳</span><h2 class="section-heading" id="projetos-title">Ideias que viraram<br><em>projetos reais.</em></h2></div>
-          <p>Uma seleção de trabalhos acadêmicos, cases de produto e experiências práticas. Cada um conta um pouco do meu jeito de pensar e criar.</p>
-        </div>
-        <div class="filter-controls reveal" role="group" aria-label="Filtrar projetos">
-          <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos <span>04</span></button>
-          <button class="filter-btn" data-filter="dev" aria-pressed="false">Desenvolvimento</button>
-          <button class="filter-btn" data-filter="design" aria-pressed="false">UX/UI</button>
-          <button class="filter-btn" data-filter="dados" aria-pressed="false">Dados</button>
-        </div>
-        <div class="project-grid">
-          <article class="project-card reveal" data-category="dev" data-project="mercado" tabindex="0" aria-label="Ver detalhes do projeto E-commerce de supermercado">
-            <div class="project-visual visual-market">
-              <div class="cover-topline"><span>WEB DEVELOPMENT</span><span>01 ↗</span></div>
-              <div class="market-window">
-                <div class="mock-browser"><span class="browser-dots"><i></i><i></i><i></i></span><span>mercado / loja online</span><span>↗</span></div>
-                <div class="market-mast"><span class="market-logo">mercad<span>✳</span></span><span class="mock-nav">Início &nbsp; Ofertas &nbsp; Categorias</span><span class="market-bag">♧</span></div>
-                <div class="market-offer"><small>OFERTAS DA SEMANA</small><strong>Seu dia,<br>mais leve.</strong><span>Compre sem sair de casa ↗</span></div>
-                <div class="market-products"><div><span class="product-shape shape-one">▰</span><small>Hortifruti</small></div><div><span class="product-shape shape-two">●</span><small>Mercearia</small></div><div><span class="product-shape shape-three">◆</span><small>Bebidas</small></div></div>
+          <div
+            class="hero-visual rise-in"
+            aria-label="Ilustração decorativa de design e tecnologia"
+          >
+            <div class="visual-orbit visual-orbit-one"></div>
+            <div class="visual-orbit visual-orbit-two"></div>
+            <div class="orbit-star orbit-star-top">✦</div>
+            <div class="orbit-star orbit-star-bottom">✳</div>
+            <div class="hero-art-board" id="hero-art">
+              <span class="board-caption">A little bit of everything</span>
+              <span class="board-stamp">LUANA<br />Dev<span>✳</span></span>
+              <div class="art-main-letter">
+                L<span class="art-flower">✳</span>
               </div>
-              <div class="cover-footer"><span>FULL STACK</span><span>2026</span></div>
+              <div class="art-crosses">+ + +</div>
+              <div class="art-bottom"><br />development<span> ↗</span></div>
             </div>
-            <div class="project-content"><div class="project-meta"><span>DESENVOLVIMENTO WEB</span><span>EM DESENVOLVIMENTO</span></div><div class="project-title-row"><h3>E-commerce de supermercado</h3><button class="project-open" type="button" aria-label="Abrir E-commerce de supermercado">↗</button></div><p>Loja online completa, com autenticação, catálogo, gestão de produtos e painel administrativo.</p><div class="project-tags"><span>Node.js</span><span>PostgreSQL</span><span>Express</span></div></div>
-          </article>
-
-          <article class="project-card reveal" data-category="design" data-project="pethelp" tabindex="0" aria-label="Ver detalhes do projeto PetHELP">
-            <div class="project-visual visual-pet">
-              <div class="cover-topline"><span>UX / UI DESIGN</span><span>02 ↗</span></div>
-              <div class="pet-orbit pet-orbit-left"></div><div class="pet-orbit pet-orbit-right"></div>
-              <div class="pet-phone phone-back"><div class="phone-top"><span>9:41</span><span>•••</span></div><span class="pet-hello">Olá, Amora! ♡</span><div class="pet-calendar"><strong>Próximas vacinas</strong><span>19 &nbsp; 20 &nbsp; <b>21</b> &nbsp; 22 &nbsp; 23</span></div><div class="pet-progress"></div><div class="pet-progress small"></div></div>
-              <div class="pet-phone phone-front"><div class="phone-top"><span>9:41</span><span>•••</span></div><div class="pet-logo">pet<span>help</span><i>✳</i></div><div class="pet-avatar">🐾</div><span class="pet-happy">Cuidado que<br><strong>aproxima.</strong></span><div class="pet-search">⌕ &nbsp; Encontre um profissional</div><div class="pet-chips"><i>Veterinário</i><i>Vacinas</i></div></div>
-              <div class="cover-footer"><span>APP CONCEPT</span><span>2025</span></div>
+            <div class="floating-ticket ticket-top">
+              <span class="mini-flower">✺</span
+              ><span>Python<br /><strong>lover.</strong></span>
             </div>
-            <div class="project-content"><div class="project-meta"><span>CASE UX/UI</span><span>PROJETO ACADÊMICO</span></div><div class="project-title-row"><h3>PetHELP — cuidado animal</h3><button class="project-open" type="button" aria-label="Abrir PetHELP">↗</button></div><p>Experiência mobile que conecta tutores a veterinários e organiza os cuidados dos pets.</p><div class="project-tags"><span>Figma</span><span>UX Research</span><span>UI Design</span></div></div>
-          </article>
-
-          <article class="project-card reveal" data-category="dev" data-project="fertirrigacao" tabindex="0" aria-label="Ver detalhes do projeto de fertirrigação">
-            <div class="project-visual visual-ferti">
-              <div class="cover-topline"><span>MOBILE DEVELOPMENT</span><span>03 ↗</span></div>
-              <div class="ferti-dashboard"><div class="ferti-top"><span>✳ terra<span>tech</span></span><span>☰</span></div><small>OLÁ, BEM-VINDA!</small><h4>Minha plantação <span>↗</span></h4><div class="ferti-sensor"><div class="sensor-ring"><div>72<small>%</small></div></div><div class="sensor-details"><span>Umidade do solo</span><strong>Condição ideal ✦</strong><span>Monitoramento ativo</span></div></div><div class="ferti-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="ferti-controls"><span>💧 Irrigação automática</span><b>ON</b></div></div>
-              <div class="ferti-waterdrop">✳</div>
-              <div class="cover-footer"><span>SMART FARMING</span><span>FLUTTER</span></div>
-            </div>
-            <div class="project-content"><div class="project-meta"><span>APLICAÇÃO MOBILE</span><span>PROJETO ACADÊMICO</span></div><div class="project-title-row"><h3>Fertirrigação inteligente</h3><button class="project-open" type="button" aria-label="Abrir Fertirrigação inteligente">↗</button></div><p>Aplicação para apoiar o acompanhamento e a automação de processos de fertirrigação.</p><div class="project-tags"><span>Flutter</span><span>IoT</span><span>Mobile</span></div></div>
-          </article>
-
-          <article class="project-card reveal" data-category="dados" data-project="dados" tabindex="0" aria-label="Ver detalhes de Estudos em dados com Python">
-            <div class="project-visual visual-data">
-              <div class="cover-topline"><span>DATA EXPLORATION</span><span>04 ↗</span></div>
-              <div class="data-dashboard"><div class="data-top"><span class="data-dots">● ● ●</span><span>notebook.ipynb</span><span>⌁</span></div><div class="data-code"><span class="data-num">01</span><span><b>import</b> pandas <b>as</b> pd</span><span class="data-num">02</span><span>df = pd.read_csv(<i>"dados.csv"</i>)</span><span class="data-num">03</span><span>df.head()</span></div><div class="data-plot"><div class="plot-heading"><strong>Explorando padrões</strong><span>↗</span></div><div class="plot-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 420 98" preserveAspectRatio="none" aria-hidden="true"><path d="M0 82 C35 72 45 76 82 65 S128 45 165 57 S215 26 253 31 S317 47 343 17 S390 25 420 3" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></div></div>
-              <div class="data-spark">✦</div>
-              <div class="cover-footer"><span>PYTHON / PANDAS</span><span>EM EVOLUÇÃO</span></div>
-            </div>
-            <div class="project-content"><div class="project-meta"><span>ESTUDOS EM DADOS</span><span>EM ANDAMENTO</span></div><div class="project-title-row"><h3>Python & análise de dados</h3><button class="project-open" type="button" aria-label="Abrir Python e análise de dados">↗</button></div><p>Exercícios e projetos de aprendizagem com exploração de dados e fundamentos de Python.</p><div class="project-tags"><span>Python</span><span>Pandas</span><span>Jupyter</span></div></div>
-          </article>
-        </div>
-        <p class="projects-footnote reveal">✳ Mais projetos e experimentos estão sempre a caminho.</p>
-      </div>
-    </section>
-
-    <section class="skills section-pad" id="habilidades" aria-labelledby="skills-title">
-      <div class="container">
-        <div class="section-top reveal"><span class="section-index">03 / MINHA CAIXA DE FERRAMENTAS</span><span class="fine-line"></span><span class="section-side-note">Things I love to do</span></div>
-        <div class="skills-grid">
-          <div class="skills-intro reveal"><span class="eyebrow">SKILLS & FERRAMENTAS</span><h2 class="section-heading" id="skills-title">Entre o lógico<br>e o <em>criativo.</em></h2><p>Gosto de transitar entre diferentes áreas. Estas são algumas das tecnologias, práticas e ferramentas que já fazem parte da minha jornada.</p><div class="skill-sticker" aria-hidden="true"><span>always<br>learning</span> ✳</div></div>
-          <div class="skills-panel reveal">
-            <div class="skill-tabs" role="tablist" aria-label="Categorias de habilidades">
-              <button type="button" id="tab-dev" role="tab" aria-controls="skill-panel" aria-selected="true" class="skill-tab active" data-skill="dev">01 / Dev</button>
-              <button type="button" id="tab-design" role="tab" aria-controls="skill-panel" aria-selected="false" class="skill-tab" data-skill="design">02 / Design</button>
-              <button type="button" id="tab-data" role="tab" aria-controls="skill-panel" aria-selected="false" class="skill-tab" data-skill="data">03 / Dados</button>
-            </div>
-            <div id="skill-panel" class="skill-panel-body" role="tabpanel" aria-labelledby="tab-dev" aria-live="polite">
-              <div class="skill-panel-heading"><span class="skill-icon">⌘</span><div><h3 id="skill-category-title">Desenvolvimento</h3><p id="skill-category-description">Da ideia à interface, e da interface à lógica que faz tudo funcionar.</p></div></div>
-              <div class="skill-chips" id="skill-chips"><span>HTML & CSS</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Python</span><span>Flutter</span><span>Git / GitHub</span></div>
-              <div class="skill-panel-bottom"><span>HABILIDADES EM CONSTANTE EVOLUÇÃO</span><span>✳</span></div>
+            <div class="floating-ticket ticket-bottom">
+              <span class="ticket-asterisk">✳</span> LOGIC & PROBLEM SOLVING
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <a class="hero-scroll" href="#sobre"
+          ><span class="scroll-mouse" aria-hidden="true"><span></span></span>
+          SCROLL TO EXPLORE</a
+        >
+      </section>
 
-    <section class="journey section-pad" id="jornada" aria-labelledby="jornada-title">
-      <div class="container">
-        <div class="section-top reveal"><span class="section-index">04 / MEU CAMINHO</span><span class="fine-line"></span><span class="section-side-note">Learning never ends</span></div>
-        <div class="journey-grid">
-          <div class="journey-heading reveal"><span class="eyebrow">ESTUDOS & EXPERIÊNCIAS</span><h2 class="section-heading" id="jornada-title">Uma história<br>em <em>construção.</em></h2><p>Cada desafio é mais uma peça nessa trajetória — e a parte mais interessante é que ela ainda está sendo escrita.</p><div class="journey-decor" aria-hidden="true">✺</div></div>
-          <div class="timeline">
-            <div class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-label">AGORA</div><div class="timeline-content"><h3>Desenvolvimento de produto digital</h3><p>Construção prática de um e-commerce, explorando front-end, back-end, banco de dados, autenticação e gestão administrativa.</p><div class="timeline-tags"><span>Full stack</span><span>Projeto real</span></div></div></div>
-            <div class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-label">EM EVOLUÇÃO</div><div class="timeline-content"><h3>Dados, Python & UX/UI</h3><p>Aprofundando conhecimentos em análise de dados e desenvolvimento, sem deixar de lado o olhar para experiência, interface e produto.</p><div class="timeline-tags"><span>Python</span><span>Figma</span><span>Estudos</span></div></div></div>
-            <div class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-label">FORMAÇÃO</div><div class="timeline-content"><h3>Sistemas de Informação</h3><p>Formação superior em tecnologia, com projetos práticos envolvendo aplicações mobile, lógica, programação e resolução de problemas.</p><div class="timeline-tags"><span>Graduação</span><span>Projetos acadêmicos</span></div></div></div>
-            <div class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-label">EXPERIÊNCIA</div><div class="timeline-content"><h3>Suporte & infraestrutura de TI</h3><p>Vivência profissional com suporte técnico, hardware, sistemas e atendimento às necessidades de pessoas e equipes.</p><div class="timeline-tags"><span>TI</span><span>Resolução de problemas</span></div></div></div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span
+            >DESENVOLVENDO SOLUÇÕES<i>✳</i> CÓDIGO COM CRIATIVIDADE
+            <i>✳</i> EXPERIÊNCIAS DIGITAIS <i>✳</i> SEMPRE APRENDENDO
+            <i>✳</i></span
+          >
+          <span
+            >DESENVOLVENDO SOLUÇÕES <i>✳</i> CÓDIGO COM CRIATIVIDADE
+            <i>✳</i> EXPERIÊNCIAS DIGITAIS <i>✳</i> SEMPRE APRENDENDO
+            <i>✳</i></span
+          >
+        </div>
+      </div>
+
+      <section
+        class="about section-pad"
+        id="sobre"
+        aria-labelledby="sobre-title"
+      >
+        <div class="container">
+          <div class="section-top reveal">
+            <span class="section-index">01 / QUEM SOU</span
+            ><span class="fine-line"></span
+            ><span class="section-side-note">Muito prazer, :)</span>
+          </div>
+          <div class="about-grid">
+            <div class="about-photo-wrap reveal">
+              <div class="photo-backdrop"></div>
+
+              <img class="about-photo" src="./assets/foto-perfil.svg" alt="" />
+              <div class="photo-scribble" aria-hidden="true">✳</div>
+              <div class="photo-label">
+                the face behind<br /><strong>the pixels ♡</strong>
+              </div>
+              <div class="photo-corner-label">FIG. 001 — THAT'S ME</div>
+            </div>
+            <div class="about-copy reveal">
+              <span class="eyebrow"
+                >SOBRE MIM <span class="eyebrow-spark">✦</span></span
+              >
+              <h2 class="section-heading" id="sobre-title">
+                Prazer,<br />sou a <em>Luana.</em>
+              </h2>
+              <div class="about-text">
+                <p>
+                  Sou estudante de <strong>Sistemas de Informação</strong>
+                  e apaixonada por tecnologia, programação e pelas
+                  possibilidades de transformar problemas em soluções através do
+                  código.
+                </p>
+
+                <p>
+                  Minha trajetória profissional começou na área de
+                  <strong>suporte e infraestrutura de TI</strong>, onde
+                  desenvolvi uma base sólida em tecnologia, resolução de
+                  problemas e pensamento analítico. Ao longo do caminho, ampliei
+                  meus conhecimentos por meio de projetos de desenvolvimento de
+                  software e aplicações web.
+                </p>
+
+                <p>
+                  Atualmente, estou aprofundando meus estudos em
+                  <strong
+                    >desenvolvimento de software, Python, análise de dados e
+                    inteligência artificial</strong
+                  >, buscando evoluir minhas habilidades técnicas e explorar
+                  novas possibilidades dentro da tecnologia. Sou movida pela
+                  curiosidade, pelo aprendizado contínuo e pela vontade de
+                  transformar conhecimento em projetos reais.
+                </p>
+              </div>
+              <div class="about-pills">
+                <span>✳ Pensamento lógico</span
+                ><span>↗ Aprendizado contínuo</span
+                ><span>♡ Resolução de problemas</span>
+              </div>
+              <a class="outline-link magnetic" href="#jornada"
+                >Conheça minha trajetória <span aria-hidden="true">↗</span></a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact section-pad" id="contato" aria-labelledby="contato-title">
-      <div class="container">
-        <div class="contact-box reveal">
-          <span class="contact-floating contact-float-1" aria-hidden="true">✴</span><span class="contact-floating contact-float-2" aria-hidden="true">✳</span>
-          <div class="contact-main"><span class="eyebrow contact-kicker">05 / VAMOS CRIAR ALGO?</span><h2 id="contato-title">Boas ideias<br>merecem <em>conexões.</em></h2><p>Tem um projeto, uma oportunidade ou só quer trocar uma ideia? Vou adorar conversar com você.</p><div class="contact-buttons"><button type="button" class="button button-light magnetic" id="email-cta">Me mande um e-mail <span class="arrow-circle" aria-hidden="true">↗</span></button><button type="button" class="contact-link" id="linkedin-cta">LinkedIn <span aria-hidden="true">↗</span></button></div></div>
-          <div class="contact-side"><div class="contact-flower" aria-hidden="true">✳</div><span>LET'S MAKE<br>SOMETHING<br>BEAUTIFUL.</span><span class="contact-mini">WITH PURPOSE AND A LITTLE MAGIC ✦</span></div>
+      <section
+        class="projects section-pad"
+        id="projetos"
+        aria-labelledby="projetos-title"
+      >
+        <div class="container">
+          <div class="section-top reveal">
+            <span class="section-index">02 / O QUE EU CRIO</span
+            ><span class="fine-line"></span
+            ><span class="section-side-note">Selected work — 2024/26</span>
+          </div>
+          <div class="projects-head reveal">
+            <div>
+              <span class="eyebrow">MEUS PROJETOS ✳</span>
+              <h2 class="section-heading" id="projetos-title">
+                Ideias que viraram<br /><em>projetos reais.</em>
+              </h2>
+            </div>
+            <p>
+              Uma seleção de trabalhos acadêmicos, cases de produto e
+              experiências práticas. Cada um conta um pouco do meu jeito de
+              pensar e criar.
+            </p>
+          </div>
+          <div
+            class="filter-controls reveal"
+            role="group"
+            aria-label="Filtrar projetos"
+          >
+            <button
+              class="filter-btn active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              Todos <span>06</span>
+            </button>
+            <button class="filter-btn" data-filter="dev" aria-pressed="false">
+              Desenvolvimento
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="design"
+              aria-pressed="false"
+            >
+              UX/UI
+            </button>
+            <button class="filter-btn" data-filter="dados" aria-pressed="false">
+              Dados
+            </button>
+          </div>
+          <div class="project-grid">
+            <!-- OrderFlow API — Python / FastAPI -->
+            <article
+              class="project-card reveal"
+              data-category="dev"
+              data-project="orderflow"
+              tabindex="0"
+              aria-label="Ver detalhes do projeto OrderFlow API"
+            >
+              <div class="project-visual visual-orderflow">
+                <div class="cover-topline">
+                  <span>PYTHON / FASTAPI</span><span>06 ↗</span>
+                </div>
+                <div class="orderflow-spark orderflow-spark-one" aria-hidden="true">✳</div>
+                <div class="orderflow-spark orderflow-spark-two" aria-hidden="true">✦</div>
+                <div class="orderflow-window" aria-hidden="true">
+                  <div class="orderflow-windowbar">
+                    <span class="orderflow-dots"><i></i><i></i><i></i></span>
+                    <span>localhost:8000/docs</span>
+                    <span class="orderflow-lock">⌘</span>
+                  </div>
+                  <div class="orderflow-window-content">
+                    <div class="orderflow-heading">
+                      <span>OrderFlow <i>API</i></span>
+                      <small>BACK-END / REST</small>
+                    </div>
+                    <p class="orderflow-window-desc">Gestão de clientes, produtos e pedidos.</p>
+                    <div class="orderflow-route">
+                      <b class="orderflow-method post">POST</b><code>/pedidos</code><span>↗</span>
+                    </div>
+                    <div class="orderflow-route">
+                      <b class="orderflow-method get">GET</b><code>/produtos</code><span>↗</span>
+                    </div>
+                    <div class="orderflow-route">
+                      <b class="orderflow-method patch">PATCH</b><code>/produtos/{id}</code><span>↗</span>
+                    </div>
+                    <div class="orderflow-response">
+                      <span class="orderflow-code-caption">RESPONSE · 200 OK</span>
+                      <code>{ "status": "ok", "api": "OrderFlow" }</code>
+                    </div>
+                  </div>
+                </div>
+                <div class="orderflow-testing">✓ 15 TESTES AUTOMATIZADOS</div>
+                <div class="cover-footer"><span>FASTAPI · SQLALCHEMY</span><span>2026</span></div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>DESENVOLVIMENTO BACK-END</span><span>PROJETO DE ESTUDO</span>
+                </div>
+                <div class="project-title-row">
+                  <h3>OrderFlow API — Gestão de Pedidos</h3>
+                  <button class="project-open" type="button" aria-label="Abrir OrderFlow API">↗</button>
+                </div>
+                <p>API REST em Python para gerenciar clientes, produtos e pedidos, com validações, controle de estoque e testes automatizados.</p>
+                <div class="project-tags">
+                  <span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>Pytest</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card reveal"
+              data-category="dev"
+              data-project="mercado"
+              tabindex="0"
+              aria-label="Ver detalhes do projeto E-commerce de supermercado"
+            >
+              <div class="project-visual visual-market">
+                <div class="cover-topline">
+                  <span>WEB DEVELOPMENT</span><span>01 ↗</span>
+                </div>
+                <div class="market-window">
+                  <div class="mock-browser">
+                    <span class="browser-dots"><i></i><i></i><i></i></span
+                    ><span>mercado / loja online</span><span>↗</span>
+                  </div>
+                  <div class="market-mast">
+                    <span class="market-logo">mercad<span>✳</span></span
+                    ><span class="mock-nav"
+                      >Início &nbsp; Ofertas &nbsp; Categorias</span
+                    ><span class="market-bag">♧</span>
+                  </div>
+                  <div class="market-offer">
+                    <small>OFERTAS DA SEMANA</small
+                    ><strong>Seu dia,<br />mais leve.</strong
+                    ><span>Compre sem sair de casa ↗</span>
+                  </div>
+                  <div class="market-products">
+                    <div>
+                      <span class="product-shape shape-one">▰</span
+                      ><small>Hortifruti</small>
+                    </div>
+                    <div>
+                      <span class="product-shape shape-two">●</span
+                      ><small>Mercearia</small>
+                    </div>
+                    <div>
+                      <span class="product-shape shape-three">◆</span
+                      ><small>Bebidas</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="cover-footer">
+                  <span>FULL STACK</span><span>2026</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>DESENVOLVIMENTO WEB</span
+                  ><span>EM DESENVOLVIMENTO</span>
+                </div>
+                <div class="project-title-row">
+                  <h3>E-commerce de supermercado</h3>
+                  <button
+                    class="project-open"
+                    type="button"
+                    aria-label="Abrir E-commerce de supermercado"
+                  >
+                    ↗
+                  </button>
+                </div>
+                <p>
+                  Loja online completa, com autenticação, catálogo, gestão de
+                  produtos e painel administrativo.
+                </p>
+                <div class="project-tags">
+                  <span>Node.js</span><span>PostgreSQL</span
+                  ><span>Express</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card reveal"
+              data-category="dev"
+              data-project="lista-compras"
+              tabindex="0"
+              aria-label="Ver detalhes do projeto Cadastro e Lista de Compras"
+            >
+              <div class="project-visual visual-shopping">
+                <div class="cover-topline">
+                  <span>JAVASCRIPT / WEB</span><span>02 ↗</span>
+                </div>
+                <div
+                  class="shopping-spark shopping-spark-one"
+                  aria-hidden="true"
+                >
+                  ✳
+                </div>
+                <div
+                  class="shopping-spark shopping-spark-two"
+                  aria-hidden="true"
+                >
+                  ✦
+                </div>
+                <div class="shopping-window" aria-hidden="true">
+                  <div class="shopping-browser">
+                    <span class="shopping-browser-dots">● ● ●</span
+                    ><span>minha lista de compras</span><span>↗</span>
+                  </div>
+                  <div class="shopping-sheet">
+                    <div class="shopping-heading">
+                      <div>
+                        <small>ORGANIZE SUAS COMPRAS</small
+                        ><strong>Minha lista <em>✳</em></strong>
+                      </div>
+                      <span class="shopping-bag">♧</span>
+                    </div>
+                    <div class="shopping-summary">
+                      <span>03 <small>produtos</small></span
+                      ><span>02 <small>coletados</small></span
+                      ><span class="shopping-summary-status">quase lá! ↗</span>
+                    </div>
+                    <div class="shopping-items-label">
+                      <span>PRODUTOS</span><span>QUANTIDADE</span>
+                    </div>
+                    <div class="shopping-list-item is-done">
+                      <span class="shopping-checkbox">✓</span
+                      ><span class="shopping-product"
+                        >Arroz <small>Unidade</small></span
+                      ><span class="shopping-quantity">2 / 2</span>
+                    </div>
+                    <div class="shopping-list-item is-done">
+                      <span class="shopping-checkbox">✓</span
+                      ><span class="shopping-product"
+                        >Leite <small>Litro</small></span
+                      ><span class="shopping-quantity">1 / 1</span>
+                    </div>
+                    <div class="shopping-list-item">
+                      <span class="shopping-checkbox"></span
+                      ><span class="shopping-product"
+                        >Maçã <small>Quilograma</small></span
+                      ><span class="shopping-quantity">0 / 1</span>
+                    </div>
+                    <div class="shopping-fake-button">
+                      Enviar lista para API <span>↗</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cover-footer">
+                  <span>HTML · CSS · JS</span><span>MOCKAPI</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>DESENVOLVIMENTO WEB</span><span>PROJETO ACADÊMICO</span>
+                </div>
+                <div class="project-title-row">
+                  <h3>Cadastro e Lista de Compras</h3>
+                  <button
+                    class="project-open"
+                    type="button"
+                    aria-label="Abrir Cadastro e Lista de Compras"
+                  >
+                    ↗
+                  </button>
+                </div>
+                <p>
+                  Sistema para cadastrar produtos, acompanhar uma lista de
+                  compras e enviar os dados para uma API.
+                </p>
+                <div class="project-tags">
+                  <span>JavaScript</span><span>HTML & CSS</span
+                  ><span>MockAPI</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card reveal"
+              data-category="design"
+              data-project="pethelp"
+              tabindex="0"
+              aria-label="Ver detalhes do projeto PetHELP"
+            >
+              <div class="project-visual visual-pet">
+                <div class="cover-topline">
+                  <span>UX / UI DESIGN</span><span>02 ↗</span>
+                </div>
+                <div class="pet-orbit pet-orbit-left"></div>
+                <div class="pet-orbit pet-orbit-right"></div>
+                <div class="pet-phone phone-back">
+                  <div class="phone-top"><span>9:41</span><span>•••</span></div>
+                  <span class="pet-hello">Olá, Amora! ♡</span>
+                  <div class="pet-calendar">
+                    <strong>Próximas vacinas</strong
+                    ><span
+                      >19 &nbsp; 20 &nbsp; <b>21</b> &nbsp; 22 &nbsp; 23</span
+                    >
+                  </div>
+                  <div class="pet-progress"></div>
+                  <div class="pet-progress small"></div>
+                </div>
+                <div class="pet-phone phone-front">
+                  <div class="phone-top"><span>9:41</span><span>•••</span></div>
+                  <div class="pet-logo">pet<span>help</span><i>✳</i></div>
+                  <div class="pet-avatar">🐾</div>
+                  <span class="pet-happy"
+                    >Cuidado que<br /><strong>aproxima.</strong></span
+                  >
+                  <div class="pet-search">
+                    ⌕ &nbsp; Encontre um profissional
+                  </div>
+                  <div class="pet-chips"><i>Veterinário</i><i>Vacinas</i></div>
+                </div>
+                <div class="cover-footer">
+                  <span>APP CONCEPT</span><span>2025</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>CASE UX/UI</span><span>PROJETO ACADÊMICO</span>
+                </div>
+                <div class="project-title-row">
+                  <h3>PetHELP — cuidado animal</h3>
+                  <button
+                    class="project-open"
+                    type="button"
+                    aria-label="Abrir PetHELP"
+                  >
+                    ↗
+                  </button>
+                </div>
+                <p>
+                  Experiência mobile que conecta tutores a veterinários e
+                  organiza os cuidados dos pets.
+                </p>
+                <div class="project-tags">
+                  <span>Figma</span><span>UX Research</span
+                  ><span>UI Design</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card reveal"
+              data-category="dev"
+              data-project="fertirrigacao"
+              tabindex="0"
+              aria-label="Ver detalhes do projeto de fertirrigação"
+            >
+              <div class="project-visual visual-ferti">
+                <div class="cover-topline">
+                  <span>MOBILE DEVELOPMENT</span><span>03 ↗</span>
+                </div>
+                <div class="ferti-dashboard">
+                  <div class="ferti-top">
+                    <span>✳ terra<span>tech</span></span
+                    ><span>☰</span>
+                  </div>
+                  <small>OLÁ, BEM-VINDA!</small>
+                  <h4>Minha plantação <span>↗</span></h4>
+                  <div class="ferti-sensor">
+                    <div class="sensor-ring">
+                      <div>72<small>%</small></div>
+                    </div>
+                    <div class="sensor-details">
+                      <span>Umidade do solo</span
+                      ><strong>Condição ideal ✦</strong
+                      ><span>Monitoramento ativo</span>
+                    </div>
+                  </div>
+                  <div class="ferti-bars">
+                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                    ><i></i>
+                  </div>
+                  <div class="ferti-controls">
+                    <span>💧 Irrigação automática</span><b>ON</b>
+                  </div>
+                </div>
+                <div class="ferti-waterdrop">✳</div>
+                <div class="cover-footer">
+                  <span>SMART FARMING</span><span>FLUTTER</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>APLICAÇÃO MOBILE</span><span>PROJETO ACADÊMICO</span>
+                </div>
+                <div class="project-title-row">
+                  <h3>Fertirrigação inteligente</h3>
+                  <button
+                    class="project-open"
+                    type="button"
+                    aria-label="Abrir Fertirrigação inteligente"
+                  >
+                    ↗
+                  </button>
+                </div>
+                <p>
+                  Aplicação para apoiar o acompanhamento e a automação de
+                  processos de fertirrigação.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span><span>IoT</span><span>Mobile</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card reveal"
+              data-category="dados"
+              data-project="dados"
+              tabindex="0"
+              aria-label="Ver detalhes de Estudos em dados com Python"
+            >
+              <div class="project-visual visual-data">
+                <div class="cover-topline">
+                  <span>DATA EXPLORATION</span><span>04 ↗</span>
+                </div>
+                <div class="data-dashboard">
+                  <div class="data-top">
+                    <span class="data-dots">● ● ●</span
+                    ><span>notebook.ipynb</span><span>⌁</span>
+                  </div>
+                  <div class="data-code">
+                    <span class="data-num">01</span
+                    ><span><b>import</b> pandas <b>as</b> pd</span
+                    ><span class="data-num">02</span
+                    ><span>df = pd.read_csv(<i>"dados.csv"</i>)</span
+                    ><span class="data-num">03</span><span>df.head()</span>
+                  </div>
+                  <div class="data-plot">
+                    <div class="plot-heading">
+                      <strong>Explorando padrões</strong><span>↗</span>
+                    </div>
+                    <div class="plot-lines">
+                      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                    <svg
+                      viewBox="0 0 420 98"
+                      preserveAspectRatio="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M0 82 C35 72 45 76 82 65 S128 45 165 57 S215 26 253 31 S317 47 343 17 S390 25 420 3"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="data-spark">✦</div>
+                <div class="cover-footer">
+                  <span>PYTHON / PANDAS</span><span>EM EVOLUÇÃO</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>ESTUDOS EM DADOS</span><span>EM ANDAMENTO</span>
+                </div>
+                <div class="project-title-row">
+                  <h3>Python & análise de dados</h3>
+                  <button
+                    class="project-open"
+                    type="button"
+                    aria-label="Abrir Python e análise de dados"
+                  >
+                    ↗
+                  </button>
+                </div>
+                <p>
+                  Exercícios e projetos de aprendizagem com exploração de dados
+                  e fundamentos de Python.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span><span>Pandas</span><span>Jupyter</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="projects-footnote reveal">
+            ✳ Mais projetos e experimentos estão sempre a caminho.
+          </p>
         </div>
+      </section>
+
+      <section
+        class="skills section-pad"
+        id="habilidades"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <div class="section-top reveal">
+            <span class="section-index">03 / MINHA CAIXA DE FERRAMENTAS</span
+            ><span class="fine-line"></span
+            ><span class="section-side-note">Things I love to do</span>
+          </div>
+          <div class="skills-grid">
+            <div class="skills-intro reveal">
+              <span class="eyebrow">SKILLS & FERRAMENTAS</span>
+              <h2 class="section-heading" id="skills-title">
+                Entre códigos <br />e <em>possibilidades.</em>
+              </h2>
+              <p>
+                Gosto de transitar entre diferentes áreas. Estas são algumas das
+                tecnologias, práticas e ferramentas que já fazem parte da minha
+                jornada.
+              </p>
+              <div class="skill-sticker" aria-hidden="true">
+                <span>always<br />learning</span> ✳
+              </div>
+            </div>
+            <div class="skills-panel reveal">
+              <div
+                class="skill-tabs"
+                role="tablist"
+                aria-label="Categorias de habilidades"
+              >
+                <button
+                  type="button"
+                  id="tab-dev"
+                  role="tab"
+                  aria-controls="skill-panel"
+                  aria-selected="true"
+                  class="skill-tab active"
+                  data-skill="dev"
+                >
+                  01 / Dev
+                </button>
+                <button
+                  type="button"
+                  id="tab-design"
+                  role="tab"
+                  aria-controls="skill-panel"
+                  aria-selected="false"
+                  class="skill-tab"
+                  data-skill="design"
+                >
+                  02 / Design
+                </button>
+                <button
+                  type="button"
+                  id="tab-data"
+                  role="tab"
+                  aria-controls="skill-panel"
+                  aria-selected="false"
+                  class="skill-tab"
+                  data-skill="data"
+                >
+                  03 / Dados
+                </button>
+              </div>
+              <div
+                id="skill-panel"
+                class="skill-panel-body"
+                role="tabpanel"
+                aria-labelledby="tab-dev"
+                aria-live="polite"
+              >
+                <div class="skill-panel-heading">
+                  <span class="skill-icon">⌘</span>
+                  <div>
+                    <h3 id="skill-category-title">Desenvolvimento</h3>
+                    <p id="skill-category-description">
+                      Da ideia à interface, e da interface à lógica que faz tudo
+                      funcionar.
+                    </p>
+                  </div>
+                </div>
+                <div class="skill-chips" id="skill-chips">
+                  <span>HTML & CSS</span><span>JavaScript</span
+                  ><span>Node.js</span><span>Express</span
+                  ><span>PostgreSQL</span><span>Python</span><span>Flutter</span
+                  ><span>Git / GitHub</span>
+                </div>
+                <div class="skill-panel-bottom">
+                  <span>HABILIDADES EM CONSTANTE EVOLUÇÃO</span><span>✳</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="journey section-pad"
+        id="jornada"
+        aria-labelledby="jornada-title"
+      >
+        <div class="container">
+          <div class="section-top reveal">
+            <span class="section-index">04 / MEU CAMINHO</span
+            ><span class="fine-line"></span
+            ><span class="section-side-note">Learning never ends</span>
+          </div>
+          <div class="journey-grid">
+            <div class="journey-heading reveal">
+              <span class="eyebrow">ESTUDOS & EXPERIÊNCIAS</span>
+              <h2 class="section-heading" id="jornada-title">
+                Uma história<br />em <em>construção.</em>
+              </h2>
+              <p>
+                Cada desafio é mais uma peça nessa trajetória — e a parte mais
+                interessante é que ela ainda está sendo escrita.
+              </p>
+              <div class="journey-decor" aria-hidden="true">✺</div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item reveal">
+                <span class="timeline-dot"></span>
+                <div class="timeline-label">AGORA</div>
+                <div class="timeline-content">
+                  <h3>Desenvolvimento de software</h3>
+                  <p>
+                    Desenvolvimento de aplicações web, explorando front-end,
+                    back-end, bancos de dados e integração de sistemas.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item reveal">
+                <span class="timeline-dot"></span>
+                <div class="timeline-label">EM EVOLUÇÃO</div>
+                <div class="timeline-content">
+                  <h3>Python, Dados & Inteligência Artificial</h3>
+                  <p>
+                    Aprofundamento em programação, análise de dados, bibliotecas
+                    Python e fundamentos de machine learning.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item reveal">
+                <span class="timeline-dot"></span>
+                <div class="timeline-label">FORMAÇÃO</div>
+                <div class="timeline-content">
+                  <h3>Sistemas de Informação</h3>
+                  <p>
+                    Formação superior em tecnologia, com projetos práticos
+                    envolvendo aplicações mobile, lógica, programação e
+                    resolução de problemas.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item reveal">
+                <span class="timeline-dot"></span>
+                <div class="timeline-label">EXPERIÊNCIA</div>
+                <div class="timeline-content">
+                  <h3>Suporte & infraestrutura de TI</h3>
+                  <p>
+                    Vivência profissional com suporte técnico, hardware,
+                    sistemas e atendimento às necessidades de pessoas e equipes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="contact section-pad"
+        id="contato"
+        aria-labelledby="contato-title"
+      >
+        <div class="container">
+          <div class="contact-box reveal">
+            <span class="contact-floating contact-float-1" aria-hidden="true"
+              >✴</span
+            ><span class="contact-floating contact-float-2" aria-hidden="true"
+              >✳</span
+            >
+            <div class="contact-main">
+              <span class="eyebrow contact-kicker">05 / VAMOS CRIAR ALGO?</span>
+              <h2 id="contato-title">
+                Boas ideias<br />merecem <em>conexões.</em>
+              </h2>
+              <p>
+                Tem um projeto, uma oportunidade ou só quer trocar uma ideia?
+                Vou adorar conversar com você.
+              </p>
+              <div class="contact-buttons">
+                <button
+                  type="button"
+                  class="button button-light magnetic"
+                  id="email-cta"
+                >
+                  Me mande um e-mail
+                  <span class="arrow-circle" aria-hidden="true">↗</span></button
+                ><button type="button" class="contact-link" id="linkedin-cta">
+                  LinkedIn <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="contact-side">
+              <div class="contact-flower" aria-hidden="true">✳</div>
+              <span>LET'S MAKE<br />SOMETHING<br />BEAUTIFUL.</span
+              ><span class="contact-mini"
+                >WITH PURPOSE AND A LI TTLE MAGIC ✦</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="#inicio" class="footer-logo">luana<span>.</span></a>
+        <p>Feito com ♥, café e boas ideias.</p>
+        <span
+          >© <span id="footer-year">2026</span> Luana — All rights
+          reserved.</span
+        ><a class="back-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="footer"><div class="container footer-inner"><a href="#inicio" class="footer-logo">luana<span>.</span></a><p>Feito com ♥, café e boas ideias.</p><span>© <span id="footer-year">2026</span> Luana — All rights reserved.</span><a class="back-top" href="#inicio" aria-label="Voltar ao topo">↑</a></div></footer>
-
-  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Fechar detalhes">×</button><div class="dialog-body"><span class="dialog-eyebrow" id="dialog-type"></span><h2 id="dialog-title"></h2><p class="dialog-lead" id="dialog-lead"></p><div class="dialog-grid"><div><h3>O projeto</h3><p id="dialog-description"></p></div><div><h3>O que explorei</h3><ul id="dialog-points"></ul></div></div><div class="dialog-tech" id="dialog-tech"></div><button type="button" class="dialog-back">← Voltar aos projetos</button></div></dialog>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-</body>
+    <dialog
+      class="project-dialog"
+      id="project-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <button class="dialog-close" type="button" aria-label="Fechar detalhes">
+        ×
+      </button>
+      <div class="dialog-body">
+        <span class="dialog-eyebrow" id="dialog-type"></span>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-lead" id="dialog-lead"></p>
+        <div class="dialog-grid">
+          <div>
+            <h3>O projeto</h3>
+            <p id="dialog-description"></p>
+          </div>
+          <div>
+            <h3>O que explorei</h3>
+            <ul id="dialog-points"></ul>
+          </div>
+        </div>
+        <div class="dialog-tech" id="dialog-tech"></div>
+        <a
+          class="dialog-repo"
+          id="dialog-repo"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          hidden
+          >Ver código no GitHub ↗</a
+        >
+        <button type="button" class="dialog-back">← Voltar aos projetos</button>
+      </div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
 </html>

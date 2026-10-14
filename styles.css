@@ -29,7 +29,7 @@ body {
   background: var(--bg);
   font-family: var(--font-sans);
   font-size: 16px;
-  -webkit-font-smoothing: antialia  sed;
+  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   transition:
     background 0.35s,
@@ -2846,7 +2846,6 @@ body.dark .cursor-halo {
   }
 }
 
-/* Projeto Cadastro e Lista de Compras — mockup ilustrativo do funcionamento */
 .visual-shopping {
   background:
     radial-gradient(circle at 18% 15%, #eecfd7 0, transparent 46%),
@@ -3090,25 +3089,37 @@ body.dark .cursor-halo {
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.07em;
-  transition: background 0.25s, transform 0.25s, border-color 0.25s;
+  transition:
+    background 0.25s,
+    transform 0.25s,
+    border-color 0.25s;
 }
 .language-toggle:hover {
   background: var(--pink-soft);
   transform: translateY(-2px);
 }
 @media (max-width: 1100px) {
-  .nav-actions { gap: 10px; }
+  .nav-actions {
+    gap: 10px;
+  }
 }
 @media (max-width: 400px) {
-  .nav { gap: 10px; }
-  .language-toggle { width: 39px; height: 39px; }
-  .nav-actions { gap: 8px; }
+  .nav {
+    gap: 10px;
+  }
+  .language-toggle {
+    width: 39px;
+    height: 39px;
+  }
+  .nav-actions {
+    gap: 8px;
+  }
 }
 
-/* OrderFlow API — visual de back-end integrado ao grid de projetos */
 .visual-orderflow {
-  background: radial-gradient(circle at 78% 11%, #674e80 0%, transparent 48%),
-              linear-gradient(140deg, #28223c 0%, #493451 68%, #68435d 100%);
+  background:
+    radial-gradient(circle at 78% 11%, #674e80 0%, transparent 48%),
+    linear-gradient(140deg, #28223c 0%, #493451 68%, #68435d 100%);
   color: #f8e9f2;
 }
 .orderflow-spark {
@@ -3116,8 +3127,18 @@ body.dark .cursor-halo {
   pointer-events: none;
   color: rgba(241, 202, 226, 0.35);
 }
-.orderflow-spark-one { top: 42px; right: 7%; font-size: 82px; transform: rotate(13deg); }
-.orderflow-spark-two { bottom: 38px; left: 6%; font-size: 42px; transform: rotate(-19deg); }
+.orderflow-spark-one {
+  top: 42px;
+  right: 7%;
+  font-size: 82px;
+  transform: rotate(13deg);
+}
+.orderflow-spark-two {
+  bottom: 38px;
+  left: 6%;
+  font-size: 42px;
+  transform: rotate(-19deg);
+}
 .orderflow-window {
   position: absolute;
   top: 65px;
@@ -3129,11 +3150,13 @@ body.dark .cursor-halo {
   color: #32273b;
   border: 1px solid #eedce8;
   border-radius: 11px 11px 0 0;
-  box-shadow: 9px 26px 53px rgba(20, 11, 27, .32);
+  box-shadow: 9px 26px 53px rgba(20, 11, 27, 0.32);
   transform: rotate(-4deg);
-  transition: transform .55s cubic-bezier(.2,.7,.3,1);
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.3, 1);
 }
-.project-card:hover .orderflow-window { transform: translateY(-12px) rotate(-1deg); }
+.project-card:hover .orderflow-window {
+  transform: translateY(-12px) rotate(-1deg);
+}
 .orderflow-windowbar {
   height: 31px;
   padding: 0 13px;
@@ -3145,15 +3168,52 @@ body.dark .cursor-halo {
   font-size: 8px;
   font-weight: 700;
 }
-.orderflow-dots { display: flex; gap: 4px; }
-.orderflow-dots i { width: 6px; height: 6px; border-radius: 50%; background: #c7a6c0; }
-.orderflow-lock { font-size: 15px; color: #a57c9c; }
-.orderflow-window-content { padding: 17px 19px; }
-.orderflow-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 5px; }
-.orderflow-heading > span { font-family: var(--font-heading); font-size: 20px; font-weight: 800; letter-spacing: -.055em; }
-.orderflow-heading i { color: #a25d89; font-family: var(--font-serif); font-weight: 600; }
-.orderflow-heading small { font-size: 7px; letter-spacing: .12em; font-weight: 800; color: #a785a2; }
-.orderflow-window-desc { margin: 7px 0 13px; font-size: 9px; color: #806f81; }
+.orderflow-dots {
+  display: flex;
+  gap: 4px;
+}
+.orderflow-dots i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c7a6c0;
+}
+.orderflow-lock {
+  font-size: 15px;
+  color: #a57c9c;
+}
+.orderflow-window-content {
+  padding: 17px 19px;
+}
+.orderflow-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.orderflow-heading > span {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+}
+.orderflow-heading i {
+  color: #a25d89;
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+.orderflow-heading small {
+  font-size: 7px;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: #a785a2;
+}
+.orderflow-window-desc {
+  margin: 7px 0 13px;
+  font-size: 9px;
+  color: #806f81;
+}
 .orderflow-route {
   display: flex;
   align-items: center;
@@ -3165,15 +3225,54 @@ body.dark .cursor-halo {
   border: 1px solid #eee2ec;
   border-radius: 6px;
 }
-.orderflow-route code { font-size: 9px; color: #4b394b; font-weight: 700; }
-.orderflow-route > span:last-child { margin-left: auto; font-size: 12px; color: #8a627d; }
-.orderflow-method { min-width: 42px; padding: 4px 5px; border-radius: 4px; font-family: monospace; font-size: 8px; text-align: center; }
-.orderflow-method.get { color: #26664b; background: #dcefe6; }
-.orderflow-method.post { color: #305e8b; background: #e0efff; }
-.orderflow-method.patch { color: #996020; background: #f8ebd4; }
-.orderflow-response { background: #2b2639; border-radius: 6px; padding: 11px 12px; margin-top: 11px; }
-.orderflow-code-caption { display: block; font-size: 7px; letter-spacing: .13em; color: #bc9fc5; margin-bottom: 7px; }
-.orderflow-response code { font-size: 9px; color: #e2cbe4; white-space: nowrap; }
+.orderflow-route code {
+  font-size: 9px;
+  color: #4b394b;
+  font-weight: 700;
+}
+.orderflow-route > span:last-child {
+  margin-left: auto;
+  font-size: 12px;
+  color: #8a627d;
+}
+.orderflow-method {
+  min-width: 42px;
+  padding: 4px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 8px;
+  text-align: center;
+}
+.orderflow-method.get {
+  color: #26664b;
+  background: #dcefe6;
+}
+.orderflow-method.post {
+  color: #305e8b;
+  background: #e0efff;
+}
+.orderflow-method.patch {
+  color: #996020;
+  background: #f8ebd4;
+}
+.orderflow-response {
+  background: #2b2639;
+  border-radius: 6px;
+  padding: 11px 12px;
+  margin-top: 11px;
+}
+.orderflow-code-caption {
+  display: block;
+  font-size: 7px;
+  letter-spacing: 0.13em;
+  color: #bc9fc5;
+  margin-bottom: 7px;
+}
+.orderflow-response code {
+  font-size: 9px;
+  color: #e2cbe4;
+  white-space: nowrap;
+}
 .orderflow-testing {
   position: absolute;
   right: 5%;
@@ -3183,25 +3282,40 @@ body.dark .cursor-halo {
   padding: 10px 12px;
   background: #e6d3e2;
   color: #603e61;
-  box-shadow: 0 7px 22px rgba(19, 8, 22, .17);
+  box-shadow: 0 7px 22px rgba(19, 8, 22, 0.17);
   font-size: 8px;
   font-weight: 800;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
   transform: rotate(5deg);
 }
 @media (max-width: 860px) {
-  .orderflow-window { left: 9%; width: 83%; transform: scale(.91) rotate(-4deg); transform-origin: top center; }
+  .orderflow-window {
+    left: 9%;
+    width: 83%;
+    transform: scale(0.91) rotate(-4deg);
+    transform-origin: top center;
+  }
 }
 @media (max-width: 650px) {
-  .orderflow-window { left: 12%; width: 77%; transform: rotate(-4deg); }
+  .orderflow-window {
+    left: 12%;
+    width: 77%;
+    transform: rotate(-4deg);
+  }
 }
 @media (max-width: 400px) {
-  .orderflow-window { left: 6%; width: 88%; transform: scale(.88) rotate(-4deg); transform-origin: top center; }
-  .orderflow-testing { font-size: 7px; padding: 8px; bottom: 28px; }
+  .orderflow-window {
+    left: 6%;
+    width: 88%;
+    transform: scale(0.88) rotate(-4deg);
+    transform-origin: top center;
+  }
+  .orderflow-testing {
+    font-size: 7px;
+    padding: 8px;
+    bottom: 28px;
+  }
 }
-
-/* [portfolio-skills-v2] */
-/* Nomes maiores das abas, mantendo o layout responsivo. */
 .skill-tab {
   min-width: 0;
   min-height: 60px;

@@ -35,19 +35,6 @@ A proposta foi unir uma identidade visual própria, com uma navegação agradáv
 - **Navegação responsiva:** experiência adaptada para desktop, tablet e celular.
 - **Microinterações e animações:** elementos animados, transições suaves e suporte à preferência por movimento reduzido.
 
-## ✳ Projetos apresentados
-
-| Projeto | Área | Resumo |
-| :--- | :--- | :--- |
-| [**OrderFlow API**](https://github.com/Luanablucas/orderflow-api) | Back-end · Python | API REST de estudo com FastAPI, SQLAlchemy, validações e testes automatizados. |
-| [**E-commerce de supermercado**](https://github.com/Luanablucas/Site-Bom-Preco) | Full-stack | Aplicação em desenvolvimento com Node.js, Express, PostgreSQL, autenticação e painel administrativo. |
-| [**Cadastro e Lista de Compras**](https://github.com/Luanablucas/Site-Cadastro-Lista-de-Compras) | Desenvolvimento web | Cadastro e acompanhamento de produtos e listas de compras, com JavaScript e integração com API. |
-| [**PetHELP**](https://www.figma.com/proto/IBJwcSDDouvJZLLOdgk0vQ/Prototipo-PetHELP-alta-fidelidade?node-id=1-4&starting-point-node-id=1%3A4&t=DwhY50cN0QpKEHJA-1) | UX/UI · Protótipo | Conceito de aplicativo para conectar tutores e veterinários e organizar cuidados com os pets. |
-| [**Fertirrigação inteligente**](https://github.com/Luanablucas/ProjetoApp-AgroUCL) | Desenvolvimento mobile | Projeto acadêmico em Flutter voltado ao acompanhamento de processos de fertirrigação. |
-| **Python & análise de dados** | Dados · Estudos | Práticas com Python, Pandas e notebooks para desenvolver lógica e análise de dados. |
-
-> Os projetos apresentados incluem trabalhos acadêmicos, estudos e aplicações em desenvolvimento. As tecnologias listadas nesta seção pertencem a esses projetos, não à infraestrutura do portfólio.
-
 ## ⚙️ Tecnologias do portfólio
 
 Este site foi desenvolvido **sem frameworks de front-end e sem back-end próprio**:
@@ -71,7 +58,7 @@ Este portfólio acompanha minha trajetória profissional e será atualizado com 
 
 ## ♡ Contato
 
-Tem uma oportunidade, ideia ou gostaria de conversar sobre tecnologia?
+Tem uma oportunidade, ideia ou gostaria de conversar?
 
 **[LinkedIn](https://www.linkedin.com/in/luana-storch-b7395a236/)** · **[E-mail](mailto:contatoluanalucas@gmail.com)** · **[Portfólio online](https://luanablucas.github.io/portfolio-luana/)**
 
@@ -79,6 +66,6 @@ Tem uma oportunidade, ideia ou gostaria de conversar sobre tecnologia?
 
 <div align="center">
 
-<sub>Feito com curiosidade, lógica e vontade de aprender. ✳</sub>
+<sub>Feito com curiosidade, lógica e vontade de aprender.</sub>
 
 </div>

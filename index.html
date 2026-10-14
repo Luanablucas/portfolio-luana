@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f9f5f1" />
-    <meta name="description" content="Portfólio pessoal de Luana — desenvolvimento de software, Python, dados e tecnologia." />
+    <meta
+      name="description"
+      content="Portfólio pessoal de Luana — desenvolvimento de software, Python, dados e tecnologia."
+    />
     <title>Luana — Código, Dados & Tecnologia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +17,21 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
+
+    <meta property="og:title" content="Luana | Portfólio de Desenvolvimento" />
+
+    <meta
+      property="og:description"
+      content="Conheça meus projetos em desenvolvimento
+  de software, back-end, Python e dados."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:url"
+      content="https://luanablucas.github.io/portfolio-luana/"
+    />
   </head>
   <body>
     <a class="skip-link" href="#principal">Pular para o conteúdo</a>
@@ -46,7 +64,7 @@
         <div class="nav-actions">
           <button
             class="language-toggle"
-    aria-live="polite"
+            aria-live="polite"
             type="button"
             aria-label="Switch to English"
             title="Alterar idioma"
@@ -124,8 +142,9 @@
               >
             </div>
             <div class="hero-footer rise-in">
-              <span class="hero-footer-line"></span> DATA SCIENCE 
-              <span class="sep">✳</span> DEV  <span class="sep">✳</span> FULLSTACK
+              <span class="hero-footer-line"></span> DATA SCIENCE
+              <span class="sep">✳</span> DEV
+              <span class="sep">✳</span> FULLSTACK
             </div>
           </div>
           <div
@@ -190,7 +209,11 @@
             <div class="about-photo-wrap reveal">
               <div class="photo-backdrop"></div>
 
-              <img class="about-photo" src="./assets\luana.jpeg" alt="" />
+              <img
+                class="about-photo"
+                src="./assets/luana.jpeg"
+                alt="Foto de Luana"
+              />
               <div class="photo-scribble" aria-hidden="true">✳</div>
               <div class="photo-label">
                 the face behind<br /><strong>the pixels ♡</strong>
@@ -296,7 +319,6 @@
             </button>
           </div>
           <div class="project-grid">
-            <!-- OrderFlow API — Python / FastAPI -->
             <article
               class="project-card reveal"
               data-category="dev"
@@ -306,10 +328,20 @@
             >
               <div class="project-visual visual-orderflow">
                 <div class="cover-topline">
-                  <span>PYTHON / FASTAPI</span><span>06 ↗</span>
+                  <span>PYTHON / FASTAPI</span><span>01 ↗</span>
                 </div>
-                <div class="orderflow-spark orderflow-spark-one" aria-hidden="true">✳</div>
-                <div class="orderflow-spark orderflow-spark-two" aria-hidden="true">✦</div>
+                <div
+                  class="orderflow-spark orderflow-spark-one"
+                  aria-hidden="true"
+                >
+                  ✳
+                </div>
+                <div
+                  class="orderflow-spark orderflow-spark-two"
+                  aria-hidden="true"
+                >
+                  ✦
+                </div>
                 <div class="orderflow-window" aria-hidden="true">
                   <div class="orderflow-windowbar">
                     <span class="orderflow-dots"><i></i><i></i><i></i></span>
@@ -321,36 +353,57 @@
                       <span>OrderFlow <i>API</i></span>
                       <small>BACK-END / REST</small>
                     </div>
-                    <p class="orderflow-window-desc">Gestão de clientes, produtos e pedidos.</p>
+                    <p class="orderflow-window-desc">
+                      Gestão de clientes, produtos e pedidos.
+                    </p>
                     <div class="orderflow-route">
-                      <b class="orderflow-method post">POST</b><code>/pedidos</code><span>↗</span>
+                      <b class="orderflow-method post">POST</b
+                      ><code>/pedidos</code><span>↗</span>
                     </div>
                     <div class="orderflow-route">
-                      <b class="orderflow-method get">GET</b><code>/produtos</code><span>↗</span>
+                      <b class="orderflow-method get">GET</b
+                      ><code>/produtos</code><span>↗</span>
                     </div>
                     <div class="orderflow-route">
-                      <b class="orderflow-method patch">PATCH</b><code>/produtos/{id}</code><span>↗</span>
+                      <b class="orderflow-method patch">PATCH</b
+                      ><code>/produtos/{id}</code><span>↗</span>
                     </div>
                     <div class="orderflow-response">
-                      <span class="orderflow-code-caption">RESPONSE · 200 OK</span>
+                      <span class="orderflow-code-caption"
+                        >RESPONSE · 200 OK</span
+                      >
                       <code>{ "status": "ok", "api": "OrderFlow" }</code>
                     </div>
                   </div>
                 </div>
                 <div class="orderflow-testing">✓ 15 TESTES AUTOMATIZADOS</div>
-                <div class="cover-footer"><span>FASTAPI · SQLALCHEMY</span><span>2026</span></div>
+                <div class="cover-footer">
+                  <span>FASTAPI · SQLALCHEMY</span><span>2026</span>
+                </div>
               </div>
               <div class="project-content">
                 <div class="project-meta">
-                  <span>DESENVOLVIMENTO BACK-END</span><span>PROJETO DE ESTUDO</span>
+                  <span>DESENVOLVIMENTO BACK-END</span
+                  ><span>PROJETO DE ESTUDO</span>
                 </div>
                 <div class="project-title-row">
                   <h3>OrderFlow API — Gestão de Pedidos</h3>
-                  <button class="project-open" type="button" aria-label="Abrir OrderFlow API">↗</button>
+                  <button
+                    class="project-open"
+                    type="button"
+                    aria-label="Abrir OrderFlow API"
+                  >
+                    ↗
+                  </button>
                 </div>
-                <p>API REST em Python para gerenciar clientes, produtos e pedidos, com validações, controle de estoque e testes automatizados.</p>
+                <p>
+                  API REST em Python para gerenciar clientes, produtos e
+                  pedidos, com validações, controle de estoque e testes
+                  automatizados.
+                </p>
                 <div class="project-tags">
-                  <span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>Pytest</span>
+                  <span>Python</span><span>FastAPI</span><span>SQLAlchemy</span
+                  ><span>Pytest</span>
                 </div>
               </div>
             </article>
@@ -364,7 +417,7 @@
             >
               <div class="project-visual visual-market">
                 <div class="cover-topline">
-                  <span>WEB DEVELOPMENT</span><span>01 ↗</span>
+                  <span>WEB DEVELOPMENT</span><span>02 ↗</span>
                 </div>
                 <div class="market-window">
                   <div class="mock-browser">
@@ -436,7 +489,7 @@
             >
               <div class="project-visual visual-shopping">
                 <div class="cover-topline">
-                  <span>JAVASCRIPT / WEB</span><span>02 ↗</span>
+                  <span>JAVASCRIPT / WEB</span><span>03 ↗</span>
                 </div>
                 <div
                   class="shopping-spark shopping-spark-one"
@@ -532,7 +585,7 @@
             >
               <div class="project-visual visual-pet">
                 <div class="cover-topline">
-                  <span>UX / UI DESIGN</span><span>02 ↗</span>
+                  <span>UX / UI DESIGN</span><span>04 ↗</span>
                 </div>
                 <div class="pet-orbit pet-orbit-left"></div>
                 <div class="pet-orbit pet-orbit-right"></div>
@@ -598,7 +651,7 @@
             >
               <div class="project-visual visual-ferti">
                 <div class="cover-topline">
-                  <span>MOBILE DEVELOPMENT</span><span>03 ↗</span>
+                  <span>MOBILE DEVELOPMENT</span><span>05 ↗</span>
                 </div>
                 <div class="ferti-dashboard">
                   <div class="ferti-top">
@@ -663,7 +716,7 @@
             >
               <div class="project-visual visual-data">
                 <div class="cover-topline">
-                  <span>DATA EXPLORATION</span><span>04 ↗</span>
+                  <span>DATA EXPLORATION</span><span>06 ↗</span>
                 </div>
                 <div class="data-dashboard">
                   <div class="data-top">
@@ -944,7 +997,7 @@
               <div class="contact-flower" aria-hidden="true">✳</div>
               <span>LET'S MAKE<br />SOMETHING<br />BEAUTIFUL.</span
               ><span class="contact-mini"
-                >WITH PURPOSE AND A LI TTLE MAGIC ✦</span
+                >WITH PURPOSE AND A LITTLE MAGIC ✦</span
               >
             </div>
           </div>

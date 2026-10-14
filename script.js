@@ -167,7 +167,7 @@ const SKILLS = {
   },
 };
 
-// PT/EN 
+// PT/EN
 
 const EN = {
   text: {
@@ -187,13 +187,10 @@ const EN = {
     Skills: "Skills",
     Jornada: "Journey",
     "Vamos conversar": "Let’s talk",
-    "PORTFÓLIO CRIATIVO / 2026": "INTERACTIVE PORTFOLIO / 2026",
+    "PORTFÓLIO / 2026": "PORTFOLIO / 2026",
     "Oi, eu sou": "Hi, I’m",
     "Conheça meus projetos": "Explore my projects",
     "Um pouco sobre mim": "A little about me",
-    Curiosidade: "Curiosity",
-    "é meu combustível.": "fuels me.",
-    "CRIATIVA POR NATUREZA": "CREATIVE BY NATURE",
     "DESENVOLVENDO SOLUÇÕES": "BUILDING SOLUTIONS",
     "CÓDIGO COM CRIATIVIDADE": "CODING WITH CREATIVITY",
     "EXPERIÊNCIAS DIGITAIS": "DIGITAL EXPERIENCES",
@@ -304,7 +301,7 @@ const EN = {
     "Tem um projeto, uma oportunidade ou só quer trocar uma ideia? Vou adorar conversar com você.":
       "Have a project, an opportunity, or just want to say hello? I’d love to hear from you.",
     "Me mande um e-mail": "Send me an email",
-    "WITH PURPOSE AND A LI TTLE MAGIC ✦": "WITH PURPOSE AND A LITTLE MAGIC ✦",
+    "WITH PURPOSE AND A LITTLE MAGIC ✦": "WITH PURPOSE AND A LITTLE MAGIC ✦",
     "Feito com ♥, café e boas ideias.": "Made with ♥, coffee, and good ideas.",
     "Luana — All rights reserved.": "Luana — All rights reserved.",
     "O projeto": "The project",
@@ -497,55 +494,67 @@ let currentLanguage = "pt";
 const SKILLS_PORTFOLIO_PT = {
   dev: {
     title: "Back-end & Desenvolvimento",
-    description: "APIs REST, regras de negócio, bancos de dados, validações e testes automatizados.",
+    description:
+      "APIs REST, regras de negócio, bancos de dados, validações e testes automatizados.",
   },
   data: {
     title: "Dados & Ferramentas",
-    description: "Análise de dados, consultas SQL e ferramentas para explorar informações.",
+    description:
+      "Análise de dados, consultas SQL e ferramentas para explorar informações.",
   },
   design: {
     title: "Design & Produto",
-    description: "Conhecimentos em interfaces e experiência do usuário como complemento ao desenvolvimento.",
+    description:
+      "Conhecimentos em interfaces e experiência do usuário como complemento ao desenvolvimento.",
   },
 };
 
-
 const BACKEND_PRIORITY = [
-  "Python", "FastAPI", "Node.js", "Express", "APIs REST",
-  "PostgreSQL", "SQLite", "SQLAlchemy", "Pydantic", "Pytest",
+  "Python",
+  "FastAPI",
+  "Node.js",
+  "Express",
+  "APIs REST",
+  "PostgreSQL",
+  "SQLite",
+  "SQLAlchemy",
+  "Pydantic",
+  "Pytest",
 ];
 
 for (const [area, content] of Object.entries(SKILLS_PORTFOLIO_PT)) {
   if (SKILLS[area]) Object.assign(SKILLS[area], content);
 }
 if (SKILLS.dev && Array.isArray(SKILLS.dev.items)) {
-  const original = SKILLS.dev.items.filter(item => item !== "REST APIs");
+  const original = SKILLS.dev.items.filter((item) => item !== "REST APIs");
   SKILLS.dev.items = [...new Set([...BACKEND_PRIORITY, ...original])];
 }
-
 
 if (typeof EN !== "undefined") {
   EN.skills ??= {};
   const enSkills = {
     dev: {
       title: "Back-end Development",
-      description: "REST APIs, business logic, databases, validation, and automated testing.",
+      description:
+        "REST APIs, business logic, databases, validation, and automated testing.",
     },
     data: {
       title: "Data & Tools",
-      description: "Data analysis, SQL queries, and tools for exploring information.",
+      description:
+        "Data analysis, SQL queries, and tools for exploring information.",
     },
     design: {
       title: "Design & Product",
-      description: "UI and user experience knowledge as a complement to software development.",
+      description:
+        "UI and user experience knowledge as a complement to software development.",
     },
   };
   for (const [area, content] of Object.entries(enSkills)) {
     EN.skills[area] = { ...(EN.skills[area] ?? {}), ...content };
   }
   if (SKILLS.dev) {
-    EN.skills.dev.items = SKILLS.dev.items.map(item =>
-      item === "APIs REST" ? "REST APIs" : item
+    EN.skills.dev.items = SKILLS.dev.items.map((item) =>
+      item === "APIs REST" ? "REST APIs" : item,
     );
   }
   EN.text ??= {};
@@ -556,14 +565,12 @@ if (typeof EN !== "undefined") {
   });
 }
 
-
 const richOriginals = Object.entries(EN.rich)
   .map(([selector, translated]) => {
     const element = document.querySelector(selector);
     return { element, original: element?.innerHTML, translated };
   })
   .filter(({ element }) => element);
-
 
 const textWalker = document.createTreeWalker(
   document.body,
@@ -604,7 +611,7 @@ function translateLanguage(language, save = true) {
   currentLanguage = language === "en" ? "en" : "pt";
   const english = currentLanguage === "en";
 
-  // Troca os textos com trechos em negrito/itálico sem eliminar o destaque visual.
+  // Troca os textos com trechos em negrito/itálico
   for (const { element, original, translated } of richOriginals) {
     element.innerHTML = english ? translated : original;
   }
@@ -658,7 +665,7 @@ function translateLanguage(language, save = true) {
 
   const activeSkill = document.querySelector(".skill-tab.active");
   if (activeSkill) chooseSkill(activeSkill);
-  // Se um projeto estiver aberto, atualiza seu conteúdo sem fechar a janela.
+
   if (dialog?.open && activeProjectId) renderProject(activeProjectId);
   if (save) {
     try {
@@ -1064,7 +1071,7 @@ if (
   });
 }
 
-// Inicializa o idioma após registrar todos os componentes e eventos.
+// Inicializa o idioma após registrar todos os componentes
 let savedLanguage = "pt";
 try {
   savedLanguage = localStorage.getItem("luana-language") === "en" ? "en" : "pt";
